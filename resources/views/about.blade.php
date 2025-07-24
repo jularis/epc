@@ -303,14 +303,13 @@
                 <div class="row align-center">
                     @if($technique->image)
                         <div class="col-lg-6">
+                            <h2 class="title split-text">{{ $technique->getTranslatedAttribute('title', app()->getLocale())}}</h2>
                         <div class="about-style-three-thumb">
                             <img src="{{ asset('storage/app/public/'.$technique->image) }}" alt="{{ $technique->getTranslatedAttribute('title', app()->getLocale())}}">
                         </div>
                     </div>
                     <div class="col-lg-6 pl-60 pl-md-15 pl-xs-15">
                         <div class="about-style-three-info">
-                            <h2 class="title split-text">{{ $technique->getTranslatedAttribute('title', app()->getLocale())}}</h2>
-
                             <p>
                                <?php echo $technique->getTranslatedAttribute('body', app()->getLocale()); ?>
                             </p>
