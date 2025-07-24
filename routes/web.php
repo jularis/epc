@@ -30,7 +30,7 @@ Route::group([
 
     Route::get('/', [HomeController::class, 'index'])->name('accueil');
     Route::get('sitemap', [HomeController::class, 'sitemap']);
-    Route::get('/presentation', [AboutController::class, 'index']);
+    Route::get('/qui-sommes-nous', [AboutController::class, 'index']);
 
     Route::get('/contacts', [AboutController::class, 'contact']);
 

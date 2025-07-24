@@ -13,20 +13,20 @@ class AboutController extends Controller
     public function index()
     {
 
-        $data['pageTitle']='CIAL INTERNATIONAL SCHOOL | Presentation';
+        $data['pageTitle']='EL PARADIS COSMETIC | Qui sommes-nous?';
 
         $data['metaDescription']='';
 
-        $data['dg'] = Motdgvideo::select('*')->first();
+        // $data['dg'] = Motdgvideo::select('*')->first();
 
-        $data['about'] = Presentation::select('*')->where('titre','Qui sommes-nous ?')->first(); 
+        // $data['about'] = Presentation::select('*')->where('titre','Qui sommes-nous ?')->first();
 
-        $data['org'] = Presentation::select('*')->where('titre','Notre organisation')->first(); 
+        // $data['org'] = Presentation::select('*')->where('titre','Notre organisation')->first();
 
-        $data['appro'] = Presentation::select('*')->where('titre','Approche technique et méthodologie')->first(); 	
-     
-        
-        return view('about.index',$data);	
+        // $data['appro'] = Presentation::select('*')->where('titre','Approche technique et méthodologie')->first();
+
+
+        return view('about',$data);
     }
 
     public function contact()
@@ -34,9 +34,9 @@ class AboutController extends Controller
 
         $data['pageTitle']='CIAL INTERNATIONAL SCHOOL | Nos contacts';
 
-        $data['metaDescription']='';     
-        
-        return view('about.contact',$data);	
+        $data['metaDescription']='';
+
+        return view('about.contact',$data);
     }
 
 
@@ -46,10 +46,10 @@ class AboutController extends Controller
         $data['pageTitle']='CIAL INTERNATIONAL SCHOOL | Nos services';
 
         $data['metaDescription']='';
- 
-        $data['service'] = Service::select('*')->where('slug',$id)->first();   
-        
-        return view('about.services',$data);	
+
+        $data['service'] = Service::select('*')->where('slug',$id)->first();
+
+        return view('about.services',$data);
     }
 
     public function fairedon()
@@ -60,9 +60,9 @@ class AboutController extends Controller
         $data['metaDescription']='';
 
 
-        $data['don'] = Service::select('*')->where('type','don')->first(); 	
-     
-        
-        return view('about.fairedon',$data);	
+        $data['don'] = Service::select('*')->where('type','don')->first();
+
+
+        return view('about.fairedon',$data);
     }
 }
