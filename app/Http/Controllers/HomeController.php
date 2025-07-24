@@ -48,10 +48,10 @@ class HomeController extends Controller
 
         // $data['partenaires'] = Partenaire::select('*')->orderby('nom','asc')->get();
 
-        // if(Cookie::get('msgHome') ==null)
-        // {
-        // Cookie::queue('msgHome', 'yes', 5);
-        // }
+        if(Cookie::get('msgHome') ==null)
+        {
+        Cookie::queue('msgHome', 'yes', 5);
+        }
 
         return view('home', $data);
     }

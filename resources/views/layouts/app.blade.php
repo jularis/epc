@@ -177,7 +177,7 @@
         </script>
 <?php
 use Illuminate\Support\Facades\Cookie;
-if(setting('site.showMsgHome')=='Oui')
+if(setting('site.showMsgHome')=='Oui' && Cookie::get('msgHome') ==null)
 {
 ?>
 <script type="text/javascript">

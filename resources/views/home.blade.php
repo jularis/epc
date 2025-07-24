@@ -374,7 +374,7 @@
                                             <div class="author">
                                             </div>
                                             <div class="level">
-                                                <i class="fas fa-check-circle"></i> {{$prod->category->name}}
+                                                <i class="fas fa-check-circle"></i> {{ $prod->getTranslatedAttribute('category->name', app()->getLocale())}}
                                             </div>
                                         </div>
                                     </div>
@@ -538,7 +538,7 @@
     <!-- End Blog -->
 <?php
 use Illuminate\Support\Facades\Cookie;
-        if(setting('site.showMsgHome')=='Oui')
+        if(setting('site.showMsgHome')=='Oui' && Cookie::get('msgHome') ==null)
         {
         ?>
   <div id="subscribe-me" class="modal fade subscribe-me sb sb-animation-fade" style="display: block;overflow: hidden;padding: 0; width:102%;">
@@ -566,12 +566,10 @@ use Illuminate\Support\Facades\Cookie;
       }
       ?>
 
+@endsection
 
- <audio controls autoplay>
+<audio autoplay>
   <source src="<?php echo asset('public/assets/img/audio-signature-french-ogg.ogg'); ?>" type="audio/ogg">
   <source src="<?php echo asset('public/assets/img/audio-signature-french.mp3'); ?>" type="audio/mpeg">
   Your browser does not support the audio element.
 </audio>
-@endsection
-
-
