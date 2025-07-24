@@ -21,8 +21,8 @@
                     <div class="container">
                         <div class="banner-style-seven-info">
                             <div class="row align-center">
-                                <div class="col-lg-7">
-                                    <div class="content">
+                                <div class="col-lg-6">
+                                    <div class="content right-info">
                                         <p style="color: hsl(43, 74%, 42%);"> {{$slide->hautTitre}} </p>
                                         <h2>{{$slide->titre}}</h2>
                                         <div class="info">
@@ -37,9 +37,6 @@
 
                                         </div>
                                     </div>
-                                </div>
-                                <div class="col-lg-4 offset-lg-1">
-
                                 </div>
                             </div>
                         </div>
