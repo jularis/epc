@@ -72,10 +72,6 @@
             <div class="container-fill">
                 <div class="row">
                     <div class="col-lg-12">
-                        <div class="brand-items">
-
-
-                        </div>
                     </div>
                 </div>
             </div>
@@ -202,5 +198,16 @@
         </div>
     </div>
     <!-- End Testimonial -->
+    <div class="post-author">
+                            <div class="thumb">
+                                <img src="{{ asset('storage/app/public/'.$direction->image) }}" alt="{{ $direction->getTranslatedAttribute('title', app()->getLocale())}}">
+                            </div>
+                            <div class="info">
+                                <h4><a href="#"><?php echo $direction->getTranslatedAttribute('excerpt', app()->getLocale()); ?></a></h4>
+                                <p>
+                                    <?php echo $direction->getTranslatedAttribute('body', app()->getLocale()); ?>
+                                </p>
+                            </div>
+                        </div>
 
 @endsection
