@@ -379,7 +379,7 @@
                                         </div>
                                     </div>
                                     <div class="info">
-                                        <h4><a href="{{url('/produits/'.$prod->slug.'/'.app()->getLocale())}}">{{$prod->title}}</a></h4>
+                                        <h4><a href="{{url(app()->getLocale().'/produits/'.$prod->slug)}}">{{$prod->getTranslatedAttribute('title', app()->getLocale())}}</a></h4>
                                         <div class="course-meta">
 
                                         </div>
@@ -387,7 +387,7 @@
 
                                         </div>
                                     </div>
-                                    <a href="{{url('/produits/'.$prod->slug.'/'.app()->getLocale())}}" class="btn">Voir ce produit</a>
+                                    <a href="{{url(app()->getLocale().'/produits/'.$prod->slug)}}" class="btn">Voir ce produit</a>
                                 </div>
                             </div>
                             <!-- Single Item -->
@@ -399,7 +399,7 @@
 
                 <div class="col-lg-12">
                     <div class="text-center">
-                        <a href="{{ url('/produits/'.app()->getLocale()) }}" class="btn-regular mt-30">Voir tous nos produits ({{$produits->count()}}) <i class="fas fa-spinner"></i></a>
+                        <a href="{{ url(app()->getLocale().'/produits') }}" class="btn-regular mt-30">Voir tous nos produits ({{$produits->count()}}) <i class="fas fa-spinner"></i></a>
                     </div>
                 </div>
             </div>
