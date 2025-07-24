@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Motdgvideo;
 use App\Presentation;
 use App\Service;
+use TCG\Voyager\Models\Page;
 
 class AboutController extends Controller
 {
@@ -13,17 +14,18 @@ class AboutController extends Controller
     public function index()
     {
 
-        $data['pageTitle']='EL PARADIS COSMETIC | Qui sommes-nous?';
+        $data['pageTitle']='Qui sommes-nous?';
 
         $data['metaDescription']='';
 
-        // $data['dg'] = Motdgvideo::select('*')->first();
-
-        // $data['about'] = Presentation::select('*')->where('titre','Qui sommes-nous ?')->first();
-
-        // $data['org'] = Presentation::select('*')->where('titre','Notre organisation')->first();
-
-        // $data['appro'] = Presentation::select('*')->where('titre','Approche technique et méthodologie')->first();
+        $data['about'] = Page::where('id',2)->first();
+        $data['direction'] = Page::where('id',3)->first();
+        $data['labo'] = Page::where('id',4)->first();
+        $data['recompense'] = Page::where('id',5)->first();
+        $data['histoire'] = Page::where('id',6)->first();
+        $data['debut'] = Page::where('id',7)->first();
+        $data['technique'] = Page::where('id',8)->first();
+        $data['vision'] = Page::where('id',9)->first();
 
 
         return view('about',$data);

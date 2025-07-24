@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="<?php echo setting('site.MetaDescription') ?? ''; ?>" />
-        <title>@yield('title','EL PARADIS COSMETIC')</title>
+        <title>EL PARADIS COSMETIC | @yield('title')</title>
 <meta name="Robots" CONTENT="All">
 <meta name="keywords" content="<?php echo setting('site.MetaKeywords') ?? ''; ?>" />
 <meta name="google-site-verification" content="<?php echo setting('site.google-site-verification')?? ''; ?>" />
