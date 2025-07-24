@@ -275,6 +275,7 @@
                             <div class="accordion-item faq-style-one">
                                 <h2 class="accordion-header" id="headingOne">
                                     <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+
                                     </button>
                                 </h2>
                                 <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
@@ -294,5 +295,46 @@
         </div>
     </div>
     <!-- End Faq  -->
+    <!-- Start About
+    ============================================= -->
+    <div class="about-style-three-area overflow-hidden pt-20 pt-md-120 pt-xs-70">
+        <div class="container">
+            <div class="about-style-three-items wow fadeInUp" data-wow-delay="200ms">
+                <div class="row align-center">
+                    @if($technique->image)
+                        <div class="col-lg-6">
+                        <div class="about-style-three-thumb">
+                            <img src="{{ asset('storage/app/public/'.$technique->image) }}" alt="{{ $technique->getTranslatedAttribute('title', app()->getLocale())}}">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 pl-60 pl-md-15 pl-xs-15">
+                        <div class="about-style-three-info">
+                            <h2 class="title split-text">{{ $technique->getTranslatedAttribute('title', app()->getLocale())}}</h2>
+
+                            <p>
+                               <?php echo $technique->getTranslatedAttribute('body', app()->getLocale()); ?>
+                            </p>
+
+                        </div>
+                    </div>
+                    @else
+
+                    <div class="col-lg-12 pl-60 pl-md-15 pl-xs-15">
+                        <div class="about-style-three-info">
+                            <h2 class="title split-text">{{ $technique->getTranslatedAttribute('title', app()->getLocale())}}</h2>
+
+                            <p>
+                               <?php echo $technique->getTranslatedAttribute('body', app()->getLocale()); ?>
+                            </p>
+
+                        </div>
+                    </div>
+                    @endif
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End About -->
 
 @endsection
