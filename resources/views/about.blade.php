@@ -250,5 +250,49 @@
         </div>
     </div>
     <!-- End About -->
+    <!-- Start Faq
+    ============================================= -->
+    <div class="faq-style-one-area default-padding bg-gray-gradient-secondary">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="faq-style-one-info wow fadeInUp">
+                        <h4 class="sub-title"></h4>
+                        <h2 class="title split-text">{{ $labo->getTranslatedAttribute('title', app()->getLocale())}}</h2>
+                        <div class="question-card">
+                            <h4></h4>
+                            <p>
+                                <div class="about-style-three-thumb">
+                            <img src="{{ asset('storage/app/public/'.$labo->image) }}" alt="{{ $labo->getTranslatedAttribute('title', app()->getLocale())}}">
+                        </div>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-7 offset-lg-1">
+                    <div class="faq-style-one-items wow fadeInUp" data-wow-delay="300ms">
+                        <div class="accordion" id="faqAccordion">
+                            <div class="accordion-item faq-style-one">
+                                <h2 class="accordion-header" id="headingOne">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    </button>
+                                </h2>
+                                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">
+                                        <p>
+                                            <?php echo $labo->getTranslatedAttribute('body', app()->getLocale()); ?>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Faq  -->
 
 @endsection
