@@ -17,7 +17,7 @@
 
                 <!-- Single Item -->
                 <div class="swiper-slide banner-style-seven">
-                    <div class="banner-thumb bg-cover shadow dark" style="background: url({{ asset('storage/app/public/'.str_replace('\\','/',$slide->image)) }});"></div>
+                    <div class="banner-thumb bg-cover " style="background: url({{ asset('storage/app/public/'.str_replace('\\','/',$slide->image)) }});"></div>
                     <div class="container">
                         <div class="banner-style-seven-info">
                             <div class="row align-center">
