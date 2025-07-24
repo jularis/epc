@@ -209,5 +209,46 @@
                                 </p>
                             </div>
                         </div>
+ <!-- Start About
+    ============================================= -->
+    <div class="about-style-three-area overflow-hidden pt-20 pt-md-120 pt-xs-70">
+        <div class="container">
+            <div class="about-style-three-items wow fadeInUp" data-wow-delay="200ms">
+                <div class="row align-center">
+                    @if($vision->image)
+                        <div class="col-lg-6">
+                        <div class="about-style-three-thumb">
+                            <img src="{{ asset('storage/app/public/'.$vision->image) }}" alt="{{ $vision->getTranslatedAttribute('title', app()->getLocale())}}">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 pl-60 pl-md-15 pl-xs-15">
+                        <div class="about-style-three-info">
+                            <h2 class="title split-text">{{ $vision->getTranslatedAttribute('title', app()->getLocale())}}</h2>
+
+                            <p>
+                               <?php echo $vision->getTranslatedAttribute('body', app()->getLocale()); ?>
+                            </p>
+
+                        </div>
+                    </div>
+                    @else
+
+                    <div class="col-lg-12 pl-60 pl-md-15 pl-xs-15">
+                        <div class="about-style-three-info">
+                            <h2 class="title split-text">{{ $vision->getTranslatedAttribute('title', app()->getLocale())}}</h2>
+
+                            <p>
+                               <?php echo $vision->getTranslatedAttribute('body', app()->getLocale()); ?>
+                            </p>
+
+                        </div>
+                    </div>
+                    @endif
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End About -->
 
 @endsection
