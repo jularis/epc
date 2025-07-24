@@ -5023,7 +5023,7 @@ ul.list-style-two li:first-child {
 .banner-style-seven .right-info {
 	position: relative;
 	z-index: 1;
-	background: rgb(9 24 77 / 40%);
+	background: rgb(9 24 77 / 15%);
 	padding: 50px !important;
 	backdrop-filter: blur(10px);
 	border-radius: 10px;
