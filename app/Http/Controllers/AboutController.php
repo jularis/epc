@@ -53,6 +53,23 @@ class AboutController extends Controller
     }
 
 
+    public function mission(string $id)
+    {
+       $data['pageTitle']='Qui sommes-nous?';
+
+        $data['metaDescription']='';
+
+        $data['about'] = Page::where('slug',$id)->first();
+        // $data['direction'] = Page::where('id',3)->first();
+        // $data['labo'] = Page::where('id',4)->first();
+        // $data['recompense'] = Page::where('id',5)->first();
+        // $data['histoire'] = Page::where('id',6)->first();
+        // $data['debut'] = Page::where('id',7)->first();
+        // $data['technique'] = Page::where('id',8)->first();
+        // $data['vision'] = Page::where('id',9)->first();
+
+        return view('aboutShow',$data);
+    }
     /**
      * Show the form for editing the specified resource.
      */
