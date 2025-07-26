@@ -153,7 +153,7 @@
     <script src="{{ asset('public/assets/js/gsap.js') }}"></script>
     <script src="{{ asset('public/assets/js/ScrollTrigger.min.js') }}"></script>
     <script src="{{ asset('public/assets/js/SplitText.min.js') }}"></script>
-    <script src="{{ asset('public/assets/js/main.js') }}"></script>
+    <script src="{{ asset('public/assets/js/main2.js') }}"></script>
 
 
         <script>
@@ -172,6 +172,26 @@
 
                 document.currentScript.parentNode.insertBefore(script, document.currentScript)
             })();
+
+
+            const swiper = new Swiper('.banner-fade', {
+    loop: true,
+    effect: 'fade',
+    autoplay: {
+        delay: 5000,
+        disableOnInteraction: false,
+    },
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+    fadeEffect: {
+        crossFade: true
+    }
+});
+
+// Arrêter autoplay après initialisation
+swiper.autoplay.stop();
 
 
         </script>
