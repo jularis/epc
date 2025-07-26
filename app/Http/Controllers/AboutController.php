@@ -49,7 +49,6 @@ class AboutController extends Controller
         // $data['technique'] = Page::where('id',8)->first();
         // $data['vision'] = Page::where('id',9)->first();
 
-
         return view('aboutShow',$data);
     }
 
