@@ -59,7 +59,7 @@ class AboutController extends Controller
 
         $data['metaDescription']='';
 
-        $data['about'] = Page::where('slug',$id)->first();
+        $data['about'] = Page::where('slug','notre-mission-reveler-la-beaute-avec-responsabilite')->first();
         // $data['direction'] = Page::where('id',3)->first();
         // $data['labo'] = Page::where('id',4)->first();
         // $data['recompense'] = Page::where('id',5)->first();
