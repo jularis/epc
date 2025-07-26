@@ -52,6 +52,7 @@ class AboutController extends Controller
         return view('aboutShow',$data);
     }
 
+
     /**
      * Show the form for editing the specified resource.
      */
