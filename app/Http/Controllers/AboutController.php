@@ -2,19 +2,41 @@
 
 namespace App\Http\Controllers;
 
-use App\Motdgvideo;
-use App\Presentation;
-use App\Service;
+use Illuminate\Http\Request;
 use TCG\Voyager\Models\Page;
 
 class AboutController extends Controller
 {
-    //
-
+    /**
+     * Display a listing of the resource.
+     */
     public function index()
     {
+        //
+    }
 
-        $data['pageTitle']='Qui sommes-nous?';
+    /**
+     * Show the form for creating a new resource.
+     */
+    public function create()
+    {
+        //
+    }
+
+    /**
+     * Store a newly created resource in storage.
+     */
+    public function store(Request $request)
+    {
+        //
+    }
+
+    /**
+     * Display the specified resource.
+     */
+    public function show(string $id)
+    {
+       $data['pageTitle']='Qui sommes-nous?';
 
         $data['metaDescription']='';
 
@@ -31,40 +53,27 @@ class AboutController extends Controller
         return view('about',$data);
     }
 
-    public function contact()
+    /**
+     * Show the form for editing the specified resource.
+     */
+    public function edit(string $id)
     {
-
-        $data['pageTitle']='CIAL INTERNATIONAL SCHOOL | Nos contacts';
-
-        $data['metaDescription']='';
-
-        return view('about.contact',$data);
+        //
     }
 
-
-    public function services($categ, $id)
+    /**
+     * Update the specified resource in storage.
+     */
+    public function update(Request $request, string $id)
     {
-
-        $data['pageTitle']='CIAL INTERNATIONAL SCHOOL | Nos services';
-
-        $data['metaDescription']='';
-
-        $data['service'] = Service::select('*')->where('slug',$id)->first();
-
-        return view('about.services',$data);
+        //
     }
 
-    public function fairedon()
+    /**
+     * Remove the specified resource from storage.
+     */
+    public function destroy(string $id)
     {
-
-        $data['pageTitle']='CIAL INTERNATIONAL SCHOOL | Faire un don';
-
-        $data['metaDescription']='';
-
-
-        $data['don'] = Service::select('*')->where('type','don')->first();
-
-
-        return view('about.fairedon',$data);
+        //
     }
 }
