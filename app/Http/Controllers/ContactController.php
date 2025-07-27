@@ -14,6 +14,7 @@ class ContactController extends Controller
     public function index()
     {
         $data['pageTitle'] = "Contactez-nous";
+        $data['metaDescription']='';
         return view('contact',$data);
     }
 

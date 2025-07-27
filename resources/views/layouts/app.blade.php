@@ -156,6 +156,36 @@
     <script src="{{ asset('public/assets/js/main.js') }}"></script>
 
 
+<script type='text/javascript' src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC_VVwtAhchqsINCTqin22MG1AzMn7d6gk&callback=Function.prototype"></script>
+
+<script>
+// ['<b>Centre Cocody 2 :<br>Sis au Grand Carrefour de l\'Indenié (Corniche) <br>Immeuble PENIEL - Au-dessus de la Pharmacie de la Corniche / 1er Etage</b>', '5.3412476', '-4.0157282'],
+    var locations = ['<b>Autoroute du Nord, KM29 Abidjan, Côte d\'Ivoire</b>', '5.4517631', '-4.1773843'];
+
+    var map = new google.maps.Map(document.getElementById('googleMap'), {
+        zoom: 15,
+        center: new google.maps.LatLng('5.4517631', '-4.1773843'),
+        mapTypeId: google.maps.MapTypeId.ROADMAP
+        });
+
+        var infowindow = new google.maps.InfoWindow();
+
+        var marker, i;
+
+
+        marker = new google.maps.Marker({
+            position: new google.maps.LatLng(locations[1], locations[2]),
+            map: map,
+        });
+
+        google.maps.event.addListener(marker, 'click', (function(marker) {
+            return function() {
+            infowindow.setContent(locations[0]);
+            infowindow.open(map, marker);
+            };
+        })(marker));
+
+</script>
         <script>
             (function (){
                 let script = document.createElement('script')
@@ -195,6 +225,7 @@ swiper.autoplay.stop();
 
 
         </script>
+
 <?php
 use Illuminate\Support\Facades\Cookie;
 if(setting('site.showMsgHome')=='Oui' && Cookie::get('msgHome') ==null)
