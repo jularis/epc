@@ -6,6 +6,7 @@ use App\Http\Controllers\AboutController;
 use App\Http\Controllers\ExamenController;
 use App\Http\Controllers\FormationController;
 use App\Http\Controllers\GalerieController;
+use App\Http\Controllers\PartenaireController;
 use App\Http\Controllers\ProduitController;
 
 /*
@@ -36,20 +37,10 @@ Route::group([
 
     Route::get('/nos-actifs-and-engagements', [AboutController::class, 'engagement']);
 
-    Route::get('/contacts', [AboutController::class, 'contact']);
+    Route::get('/contactez-nous', [AboutController::class, 'contact']);
 
-    Route::get('/services/{slug}', [AboutController::class, 'services']);
+    Route::get('/partenaires', [PartenaireController::class, 'index']);
 
-    Route::get('/faire-un-don', [AboutController::class, 'fairedon']);
-
-    Route::get('/formations/{categ}',[FormationController::class, 'category']);
-    Route::get('/formations/inscription/{slug}',[FormationController::class, 'inscris']);
-
-    Route::get('/examens/{categ}',[ExamenController::class, 'index']);
-    Route::get('/examens/{categ}/{slug}',[ExamenController::class, 'show']);
-
-    Route::get('/galeries',[GalerieController::class, 'index']);
-    Route::get('/galeries/{slug}',[GalerieController::class, 'show']);
     Route::resource('produits', ProduitController::class);
 });
 
