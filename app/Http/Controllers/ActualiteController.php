@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use TCG\Voyager\Models\Post;
 
-class ActualiteController extends Controller
+class ActualiteController  extends Controller
 {
     /**
      * Display a listing of the resource.

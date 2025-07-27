@@ -7,6 +7,7 @@ use App\Http\Controllers\ExamenController;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\GalerieController;
 use App\Http\Controllers\ProduitController;
+use App\Http\Controllers\ActualiteController;
 use App\Http\Controllers\FormationController;
 use App\Http\Controllers\PartenaireController;
 
