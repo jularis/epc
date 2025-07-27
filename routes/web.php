@@ -42,7 +42,7 @@ Route::group([
 
     Route::get('/ou-trouver-nos-produits', [PartenaireController::class, 'index']);
 
-    Route::resource('produits', ProduitController::class);
+    Route::resource('actualites', ActualiteController::class);
 });
 
 
