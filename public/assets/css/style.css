@@ -18753,6 +18753,13 @@ footer.dark-optional .footer-bottom p {
             width: 180px;
             box-shadow: 0 2px 10px rgba(0,0,0,0.1);
         }
+        .card2 {
+            background-color: white;
+            border-radius: 10px;
+            padding: 0px;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
         .card img {
             width: 100%;
             margin-bottom: 10px;

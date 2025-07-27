@@ -30,8 +30,8 @@
         <div class="cards">
                     @foreach ($partenaires as $part)
 
-                    <div class="card">
-                        <img src="{{ asset('storage/app/public/'.str_replace('\\','/',$part->image)) }}" alt="{{$part->nom}}">
+                    <div class="col-lg-3 col-md-12 mt-30 card2">
+                        <img src="{{ asset('storage/app/public/'.str_replace('\\','/',$part->image)) }}" alt="{{$part->nom}}" style="height: 325px;">
                         <div class="card-title"><a href="{{ $part->siteweb }}" target="_blank">{{$part->nom}}</a> </div>
                         <div class="card-desc">{{$part->type_surface}}</div>
                     </div>
