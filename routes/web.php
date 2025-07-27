@@ -39,7 +39,7 @@ Route::group([
 
     Route::get('/contactez-nous', [AboutController::class, 'contact']);
 
-    Route::get('/partenaires', [PartenaireController::class, 'index']);
+    Route::get('/ou-trouver-nos-produits', [PartenaireController::class, 'index']);
 
     Route::resource('produits', ProduitController::class);
 });
