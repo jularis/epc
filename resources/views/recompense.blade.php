@@ -30,7 +30,7 @@
                 @foreach ($recompenses as $recomp)
 
                 <!-- Single Item -->
-                <div class="col-lg-6 col-md-12 mt-30">
+                <div class="col-lg-4 col-md-12 mt-30">
                     <div class="gallery-style-one-item">
                         <img src="{{ asset('storage/app/public/'.$recomp->image) }}" alt="Image Not Found">
                         <a class="item popup-gallery" href="{{ asset('storage/app/public/'.$recomp->image) }}"><i class="fas fa-link"></i></a>
