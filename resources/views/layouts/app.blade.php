@@ -153,7 +153,7 @@
     <script src="{{ asset('public/assets/js/gsap.js') }}"></script>
     <script src="{{ asset('public/assets/js/ScrollTrigger.min.js') }}"></script>
     <script src="{{ asset('public/assets/js/SplitText.min.js') }}"></script>
-    <script src="{{ asset('public/assets/js/main2.js') }}"></script>
+    <script src="{{ asset('public/assets/js/main.js') }}"></script>
 
 
         <script>

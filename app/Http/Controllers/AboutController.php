@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Distinction;
 use Illuminate\Http\Request;
 use TCG\Voyager\Models\Page;
 
@@ -40,16 +41,20 @@ class AboutController extends Controller
 
         $data['metaDescription']='';
 
-        $data['about'] = Page::where('slug',$slug)->first();
-        // $data['direction'] = Page::where('id',3)->first();
-        // $data['labo'] = Page::where('id',4)->first();
-        // $data['recompense'] = Page::where('id',5)->first();
-        // $data['histoire'] = Page::where('id',6)->first();
-        // $data['debut'] = Page::where('id',7)->first();
-        // $data['technique'] = Page::where('id',8)->first();
-        // $data['vision'] = Page::where('id',9)->first();
+
+        if($slug == 'recompenses-et-distinctions')
+        {
+            $data['pageTitle']='Récompenses et Distinctions';
+    $data['recompenses'] = Distinction::where('status','PUBLISHED')->orderby('id','desc')->get();
+
+        return view('recompense',$data);
+        }
+        else{
+$data['about'] = Page::where('slug',$slug)->first();
 
         return view('aboutShow',$data);
+        }
+
     }
 
 
