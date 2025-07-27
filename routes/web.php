@@ -34,6 +34,8 @@ Route::group([
 
     Route::get('/notre-mission-reveler-la-beaute-avec-responsabilite', [AboutController::class, 'mission']);
 
+    Route::get('/nos-actifs-and-engagements', [AboutController::class, 'engagement']);
+
     Route::get('/contacts', [AboutController::class, 'contact']);
 
     Route::get('/services/{slug}', [AboutController::class, 'services']);

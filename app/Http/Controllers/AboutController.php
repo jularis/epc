@@ -59,17 +59,21 @@ class AboutController extends Controller
 
         $data['metaDescription']='';
 
-        $data['about'] = Page::where('slug','notre-mission-reveler-la-beaute-avec-responsabilite')->first();
-        // $data['direction'] = Page::where('id',3)->first();
-        // $data['labo'] = Page::where('id',4)->first();
-        // $data['recompense'] = Page::where('id',5)->first();
-        // $data['histoire'] = Page::where('id',6)->first();
-        // $data['debut'] = Page::where('id',7)->first();
-        // $data['technique'] = Page::where('id',8)->first();
-        // $data['vision'] = Page::where('id',9)->first();
+        $data['about'] = Page::where('id',11)->first();
+        return view('aboutShow',$data);
+    }
+
+    public function engagement(string $id)
+    {
+       $data['pageTitle']='Nos actifs et engagement?';
+
+        $data['metaDescription']='';
+
+        $data['about'] = Page::where('id',10)->first();
 
         return view('aboutShow',$data);
     }
+
     /**
      * Show the form for editing the specified resource.
      */
