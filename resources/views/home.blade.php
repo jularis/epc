@@ -498,7 +498,7 @@
     ============================================= -->
     <div class="blog-area home-blog-style-two default-padding bottom-less" style="background-color: #f9f9f3;">
         <div class="container">
-        <h1 class="text-center">Où Nous Trouver</h1>
+        <h1 class="text-center">Où Trouver Nos Produits ?</h1>
         <p class="subtitle">Découvrez nos produits dans plus de 500 points de vente à travers la Côte d'Ivoire</p>
 
         <div class="cards">

@@ -13,11 +13,11 @@ class PartenaireController extends Controller
      */
     public function index()
     {
-        $data['pageTitle']='Nos partenaires';
+        $data['pageTitle']='Où Trouver Nos Produits ?';
 
         $data['metaDescription']='';
 
-        $data['partenaires'] = Partenaire::get();
+        $data['partenaires'] = Partenaire::where('status','PUBLISHED')->orderby('id','desc')->get();
 
         return view('partenaire',$data);
     }
