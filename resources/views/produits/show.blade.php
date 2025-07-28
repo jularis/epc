@@ -27,15 +27,13 @@
 
     <!-- Start Course Details
     ============================================= -->
-    <div class="course-detils-area default-padding">
+    <div class="course-detils-area">
         <div class="container">
             <div class="course-details-items">
                 <div class="row">
                     <div class="col-lg-8 pr-40 pr-md-15 pr-xs-15">
                         <div class="course-details-left-info">
                             <div class="coruse-details-thumb">
-                                <br>
-                                <br>
                                 <br>
                                 <br>
                             </div>
