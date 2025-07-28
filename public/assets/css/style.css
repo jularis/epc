@@ -4899,7 +4899,7 @@ ul.list-style-two li:first-child {
 	top: 0;
 	content: "";
 	left: 0%;
-	height: 100px;
+	height: 75px;
 	background: #e5e7e6;
 	z-index: 1;
 }
