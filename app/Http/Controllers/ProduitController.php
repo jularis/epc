@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\CategoriesProduit;
+use App\Models\Produit;
 use Illuminate\Http\Request;
 
 class ProduitController extends Controller
@@ -9,9 +11,18 @@ class ProduitController extends Controller
     /**
      * Display a listing of the resource.
      */
-    public function index()
+    public function index(string $id, string $slug)
     {
-        //
+
+        $data['pageTitle']='Nos produits';
+
+        $data['metaDescription']='';
+
+        $categ = CategoriesProduit::where('slug',$slug)->first();
+
+        $data['produits'] = Produit::where('categories_produit_id',$categ->id)->orderby('id','desc')->paginate(10);
+
+        return view('produits.index',$data);
     }
 
     /**
@@ -33,9 +44,14 @@ class ProduitController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(string $id)
+    public function show(string $id, string $slug)
     {
-        //
+        $data['pageTitle']='Nos produits';
+        $data['metaDescription']='';
+
+        $data['detail'] = Produit::where('slug',$slug)->first();
+
+        return view('produits.show',$data);
     }
 
     /**

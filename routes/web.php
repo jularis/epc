@@ -3,12 +3,9 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\AboutController;
-use App\Http\Controllers\ExamenController;
 use App\Http\Controllers\ContactController;
-use App\Http\Controllers\GalerieController;
 use App\Http\Controllers\ProduitController;
 use App\Http\Controllers\ActualiteController;
-use App\Http\Controllers\FormationController;
 use App\Http\Controllers\PartenaireController;
 
 /*
@@ -44,6 +41,7 @@ Route::group([
     Route::get('/ou-trouver-nos-produits', [PartenaireController::class, 'index']);
 
     Route::resource('actualites', ActualiteController::class);
+    Route::get('nos-produits/{slug}', [ProduitController::class,'index']);
 });
 
 
