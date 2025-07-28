@@ -11,7 +11,19 @@ class ProduitController extends Controller
     /**
      * Display a listing of the resource.
      */
-    public function index(string $id, string $slug)
+    public function index(string $id)
+    {
+
+        $data['pageTitle']='Nos produits';
+
+        $data['metaDescription']='';
+
+        $data['produits'] = Produit::orderby('id','desc')->paginate(10);
+
+        return view('produits.index', $data);
+    }
+
+    public function produits(string $id, string $slug)
     {
 
         $data['pageTitle']='Nos produits';

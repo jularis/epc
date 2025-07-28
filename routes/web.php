@@ -41,8 +41,9 @@ Route::group([
     Route::get('/ou-trouver-nos-produits', [PartenaireController::class, 'index']);
 
     Route::resource('actualites', ActualiteController::class);
-    Route::get('nos-produits/{slug}', [ProduitController::class,'index']);
-    Route::get('nos-produits/{id}/{slug}', [ProduitController::class,'show']);
+    Route::get('/nos-produits', [ProduitController::class,'index']);
+    Route::get('/nos-produits/{slug}', [ProduitController::class,'produits']);
+    Route::get('/nos-produits/{id}/{slug}', [ProduitController::class,'show']);
 });
 
 
