@@ -2646,9 +2646,12 @@ nav.navbar.validnavs .navbar-collapse.collapse.collapse-mobile.show {
 	width: 100%;
 	top: 0;
 	animation: sticky 0.4s;
-	box-shadow: var(--box-shadow);
 	z-index: 9999;
 	background: #ffffff !important;
+        filter: alpha(opacity = 97);
+    -webkit-box-shadow: 0 2px 5px 0 rgba(0,0,0,0.1);
+    -moz-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.1);
 }
 .sticked img {
 	width: 45px !important;
