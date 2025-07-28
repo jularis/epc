@@ -16,7 +16,7 @@ class ActualiteController  extends Controller
 
         $data['metaDescription']='';
 
-        $data['partenaires'] = Post::where('status','PUBLISHED')->orderby('id','desc')->get();
+        $data['actualites'] = Post::where('status','PUBLISHED')->orderby('id','desc')->paginate(10);
 
         return view('actualites.index',$data);
     }
