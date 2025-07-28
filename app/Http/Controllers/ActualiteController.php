@@ -40,9 +40,15 @@ class ActualiteController  extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(string $id)
+    public function show(string $id, string $slug)
     {
-        //
+
+        $data['pageTitle']='Nos actualités';
+        $data['metaDescription']='';
+
+        $data['detail'] = Post::where('slug',$slug)->first();
+
+        return view('actualites.show',$data);
     }
 
     /**
