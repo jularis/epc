@@ -44,12 +44,12 @@ class ProduitController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(string $id, string $slug)
+    public function show(string $id, string $slug, string $url)
     {
         $data['pageTitle']='Nos produits';
         $data['metaDescription']='';
 
-        $data['detail'] = Produit::where('slug',$slug)->first();
+        $data['detail'] = Produit::where('slug',$url)->first();
 
         return view('produits.show',$data);
     }

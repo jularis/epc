@@ -39,7 +39,7 @@
 
                         </div>
                         <div class="info">
-                            <h4><a href="{{url(app()->getLocale().'/nos-produits/'.$prod->slug)}}">{{ $prod->getTranslatedAttribute('title', app()->getLocale())}}</a></h4>
+                            <h4><a href="{{url(app()->getLocale().'/nos-produits/'.$prod->category->slug.'/'.$prod->slug)}}">{{ $prod->getTranslatedAttribute('title', app()->getLocale())}}</a></h4>
                             <div class="course-meta">
                                 <ul>
                                     <li>
