@@ -13,7 +13,7 @@
                     <h1>{{ $about->getTranslatedAttribute('title', app()->getLocale())}} </h1>
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb">
-                            <li><a href="#"><i class="fas fa-home"></i> Home</a></li>
+                            <li><a href="#"><i class="fas fa-home"></i> @lang('common.accueil')</a></li>
                             <li class="active">{{ $pageTitle }}</li>
                             <li class="active">{{ $about->getTranslatedAttribute('title', app()->getLocale())}} </li>
                         </ol>

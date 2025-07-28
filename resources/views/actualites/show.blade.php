@@ -13,7 +13,7 @@
                     <h1>{{ $detail->title }} </h1>
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb">
-                            <li><a href="#"><i class="fas fa-home"></i> Home</a></li>
+                            <li><a href="#"><i class="fas fa-home"></i> @lang('common.accueil')</a></li>
                             <li class="">{{ $pageTitle }}</li>
                             <li class="active">{{ $detail->title }}</li>
                         </ol>

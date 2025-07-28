@@ -2493,7 +2493,7 @@ nav.navbar.validnavs.brand-center {
 
 @media (min-width: 1024px) {
 	nav.navbar ul.nav>li>a {
-		padding: 30px 12px;
+		padding: 5px 12px;
 		font-weight: 500;
 		font-size: 14px;
 		text-transform: capitalize;
@@ -2650,7 +2650,12 @@ nav.navbar.validnavs .navbar-collapse.collapse.collapse-mobile.show {
 	z-index: 9999;
 	background: #ffffff !important;
 }
-
+.sticked img {
+	width: 45px !important;
+}
+.sticked nav.navbar.validnavs {
+    padding: 0;
+}
 @keyframes fadeIn {
 	from {
 		opacity: 0;

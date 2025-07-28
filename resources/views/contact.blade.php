@@ -10,11 +10,11 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 offset-lg-2">
-                    <h1>{{ $pageTitle }} </h1>
+                    <h1>@lang('common.contact') </h1>
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb">
-                            <li><a href="#"><i class="fas fa-home"></i> Home</a></li>
-                            <li class="active">{{ $pageTitle }}</li>
+                            <li><a href="#"><i class="fas fa-home"></i> @lang('common.accueil')</a></li>
+                            <li class="active">@lang('common.contact')</li>
                         </ol>
                     </nav>
                 </div>
