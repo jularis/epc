@@ -23,38 +23,40 @@
     </div>
     <!-- End Breadcrumb -->
 
-     <!-- Start Blog
+    <!-- Start Product
     ============================================= -->
-    <div class="blog-area home-blog-style-two blog-grid default-padding">
+    <div class="course-style-one-area default-padding bottom-less">
         <div class="container">
-            <div class="blog-item-box">
-                <div class="row">
-                    @foreach ($produits as $prod)
+            <div class="row">
+                @foreach ($produits as $prod)
+                <!-- Single Item -->
+                <div class="col-xl-4 col-lg-6 col-md-6 mb-30">
+                    <div class="course-style-one-item hover-less wow fadeInUp">
+                        <div class="thumb" style="max-height: 370px">
+                            <img src="{{ asset('storage/app/public/'.str_replace('\\','/',$prod->image)) }}" alt="Image Not Found">
+                        </div>
+                        <div class="top-meta">
 
-                    <!-- Single Item -->
-                    <div class="col-xl-4 col-md-6 col-lg-6 mb-50">
-                        <div class="home-blog-style-two-item wow fadeInUp">
-                            <div class="thumb">
-                                <img src="{{ asset('storage/app/public/'.str_replace('\\','/',$prod->image)) }}" alt="Image not Found">
-                                <ul class="blog-meta">
-                                    <li><i class="fas fa-calendar-alt"></i> {{ date('d-m-Y', strtotime($prod->created_at))}}</li>
+                        </div>
+                        <div class="info">
+                            <h4><a href="{{url(app()->getLocale().'/nos-produits/'.$prod->slug)}}">{{ $prod->getTranslatedAttribute('title', app()->getLocale())}}</a></h4>
+                            <div class="course-meta">
+                                <ul>
+                                    <li>
+                                        <i class="fas fa-file-alt"></i> <?php echo $prod->category->name; ?>
+                                    </li>
                                 </ul>
                             </div>
-                            <div class="info">
-                                <h3 class="blog-title">
-                                    <a href="{{url(app()->getLocale().'/produits/'.$prod->slug)}}">{{ $prod->getTranslatedAttribute('title', app()->getLocale())}}</a>
-                                </h3>
-                                <p>
-                                    <?php echo $prod->getTranslatedAttribute('excerpt', app()->getLocale()); ?>
-                                </p>
-                                <a href="{{url(app()->getLocale().'/produits/'.$prod->slug)}}" class="btn-read-more">Lire la suite <i class="fas fa-long-arrow-right"></i></a>
+                            <div class="bottom-meta">
+                                <a href="{{url(app()->getLocale().'/nos-produits/'.$prod->category->slug.'/'.$prod->slug)}}">Tout voir <i class="fas fa-long-arrow-right"></i></a>
+
                             </div>
                         </div>
                     </div>
-                    <!-- End Single Item -->
-                    @endforeach
-
                 </div>
+                <!-- End Single Item -->
+                @endforeach
+
             </div>
             <!-- Pagination -->
             <div class="row">
@@ -66,10 +68,9 @@
                     </nav>
                 </div>
             </div>
-            <!-- End Pagination -->
         </div>
     </div>
-    <!-- End Blog -->
+    <!-- End Product -->
 
 
 @endsection

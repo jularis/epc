@@ -371,23 +371,23 @@
                                     <div class="thumb" style="max-height: 370px">
                                         <img src="{{ asset('storage/app/public/'.str_replace('\\','/',$prod->image)) }}" alt="">
                                         <div class="top-meta">
-                                            <div class="author">
-                                            </div>
-                                            <div class="level">
-                                                <i class="fas fa-check-circle"></i> {{ $prod->getTranslatedAttribute('category->name', app()->getLocale())}}
-                                            </div>
+
                                         </div>
                                     </div>
                                     <div class="info">
-                                        <h4><a href="{{url(app()->getLocale().'/produits/'.$prod->slug)}}">{{$prod->getTranslatedAttribute('title', app()->getLocale())}}</a></h4>
+                                        <h4><a href="{{url(app()->getLocale().'/nos-produits/'.$prod->category->slug.'/'.$prod->slug)}}">{{$prod->getTranslatedAttribute('title', app()->getLocale())}}</a></h4>
                                         <div class="course-meta">
-
+                                                    <ul>
+                                            <li>
+                                                <i class="fas fa-file-alt"></i> <?php echo $prod->category->name; ?>
+                                            </li>
+                                        </ul>
                                         </div>
                                         <div class="bottom-meta">
 
                                         </div>
                                     </div>
-                                    <a href="{{url(app()->getLocale().'/produits/'.$prod->slug)}}" class="btn">Voir ce produit</a>
+                                    <a href="{{url(app()->getLocale().'/nos-produits/'.$prod->category->slug.'/'.$prod->slug)}}" class="btn">Voir ce produit</a>
                                 </div>
                             </div>
                             <!-- Single Item -->
@@ -399,7 +399,7 @@
 
                 <div class="col-lg-12">
                     <div class="text-center">
-                        <a href="{{ url(app()->getLocale().'/produits') }}" class="btn-regular mt-30">Voir tous nos produits ({{$produits->count()}}) <i class="fas fa-spinner"></i></a>
+                        <a href="{{ url(app()->getLocale().'/nos-produits') }}" class="btn-regular mt-30">Voir tous nos produits ({{$produits->count()}}) <i class="fas fa-spinner"></i></a>
                     </div>
                 </div>
             </div>

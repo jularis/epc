@@ -42,6 +42,7 @@ Route::group([
 
     Route::resource('actualites', ActualiteController::class);
     Route::get('nos-produits/{slug}', [ProduitController::class,'index']);
+    Route::get('nos-produits/{id}/{slug}', [ProduitController::class,'show']);
 });
 
 
