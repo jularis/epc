@@ -7320,17 +7320,6 @@ ul.curriculum-list li .right-content i {
 	z-index: 1;
 }
 
-.course-detils-area::after {
-	position: absolute;
-	left: 0;
-	top: 0;
-	content: "";
-	height: 230px;
-	right: 0;
-	background: var(--white);
-	z-index: -1;
-	box-shadow: 0 8px 10px -2px rgba(0, 0, 0, 0.08);
-}
 
 .course-cat-single {
 	position: relative;
