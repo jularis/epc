@@ -23,64 +23,7 @@
     </div>
     <!-- End Breadcrumb -->
 
-    <!-- Start Contact Us
-    ============================================= -->
-    <div class="contact-style-one-area overflow-hidden default-padding-bottom">
-        <div class="container">
-            <div class="row">
 
-                <div class="contact-stye-one col-lg-10 offset-lg-1">
-                    <div class="contact-form-style-one">
-                        <h2 class="heading">Envoyer un message</h2>
-                        <form action="assets/mail/contact.php" method="POST" class="contact-form contact-form">
-                            <div class="row">
-                                <div class="col-lg-12">
-                                    <div class="form-group">
-                                        <input class="form-control" id="name" name="name" placeholder="Nom" type="text">
-                                        <span class="alert-error"></span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-lg-6">
-                                    <div class="form-group">
-                                        <input class="form-control" id="email" name="email" placeholder="Email*" type="email">
-                                        <span class="alert-error"></span>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6">
-                                    <div class="form-group">
-                                        <input class="form-control" id="phone" name="phone" placeholder="Téléphone" type="text">
-                                        <span class="alert-error"></span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-lg-12">
-                                    <div class="form-group comments">
-                                        <textarea class="form-control" id="comments" name="comments" placeholder="Votre message *"></textarea>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-lg-12">
-                                    <button type="submit" name="submit" id="submit">
-                                        <i class="fa fa-paper-plane"></i> Envoyer votre message
-                                    </button>
-                                </div>
-                            </div>
-                            <!-- Alert Message -->
-                            <div class="col-lg-12 alert-notification">
-                                <div id="message" class="alert-msg"></div>
-                            </div>
-                        </form>
-                        <img src="{{ asset('public/assets/img/shape/88.png') }}" alt="Image Not Found">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- End Contact -->
         <!-- Start Contact Information
     ============================================= -->
     <div class="contact-info-area overflow-hidden default-padding-bottom pt-20 mt--20">
