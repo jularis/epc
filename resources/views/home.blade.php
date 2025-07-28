@@ -64,7 +64,7 @@
     <div class="about-style-six-area default-padding bg-gray-gradient-secondary">
         <div class="about-style-six-thumb">
             <img class="wow fadeInUp" src="{{ asset('public/assets/img/batimen_epc.jpg') }}" alt="">
-            <a href="about-us.html" class="round-text">
+            <a href="{{url(app()->getLocale().'/qui-sommes-nous/presentation-de-la-marque')}}" class="round-text">
                 <img src="{{ asset('public/assets/img/illustration/12.png') }}" alt="">
                 <i class="fas fa-long-arrow-right"></i>
             </a>
@@ -522,7 +522,7 @@
                     <li>Respect de notre politique de marque</li>
                     <li>Relation commerciale durable</li>
                 </ul>
-                <a href="#" class="partner-button">Candidater Maintenant</a>
+                {{-- <a href="#" class="partner-button">Candidater Maintenant</a> --}}
 
                 <div class="contact-info">
                     <span>📧 info@elparadiscosmetic.net</span>
