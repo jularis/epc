@@ -74,13 +74,13 @@
                 <div class="col-lg-7 offset-lg-5">
                     <div class="about-style-six-info pl-50 pl-md-0 pl-xs-0">
                         <div class="top-info wow fadeInUp mb-30">
-                            <h2>Dépuis <strong>1994</strong></h2>
+                            <h2>@lang('common.depuis') <strong>1994</strong></h2>
                         </div>
                         <div class="wow fadeInUp" data-wow-delay="300ms">
-                            <h4 class="sub-title">Qui sommes-nous?</h4>
-                            <h2 class="title split-text">Une Vision, Une Excellence</h2>
+                            <h4 class="sub-title">@lang('common.about')</h4>
+                            <h2 class="title split-text">@lang('common.excellence')</h2>
                             <p>
-                               EL Paradis Cosmetic (EPC) est une entreprise industrielle ivoirienne spécialisée dans la fabrication et la distribution de produits cosmétiques, née d'une vision claire : valoriser la beauté en générale et africaine en particulier avec des soins sûrs, efficaces et accessibles.
+                               @lang('common.text_about')
                             </p>
                         </div>
                     </div>
@@ -101,16 +101,16 @@
 
                             <figure>
                             <img src="{{ asset('public/assets/img/magasinepc.jpg') }}" alt="Image Not Found">
-                            <figcaption><i>El Paradis du Cosmétique I - Port-Bouët, 1994</i></figcaption>
+                            <figcaption><i>@lang('common.epc_debut')</i></figcaption>
                             </figure>
                         </div>
                     </div>
                     <div class="col-lg-6 pl-60 pl-md-15 pl-xs-15">
                         <div class="about-style-three-info">
-                            <h2 class="title split-text">Les Débuts (1994)</h2>
+                            <h2 class="title split-text">@lang('common.epc_annee')</h2>
 
                             <p>
-                                Tout commence en 1994, dans le quartier de Port-Bouët derrière warf, où Monsieur Agbéré El Memen décide d'ouvrir sa propre boutique baptisée « El Paradis du Cosmétique I ». Ce magasin devient rapidement une référence dans le secteur grâce à son sens du service, sa connaissance des besoins des clients et la qualité des produits proposés.
+                                @lang('common.epc_texte')
                             </p>
                             <div class="fact-style-two">
                                 <div class="d-grid mt-30 wow fadeInUp" data-wow-delay="400ms" style="visibility: visible; animation-delay: 400ms; animation-name: fadeInUp;">
@@ -119,13 +119,13 @@
                                     <div class="accordion-item faq-style-two">
                                         <h2 class="accordion-header" id="headingOne">
                                             <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                                Reconnaissance
+                                                @lang('common.epc_reconnaissance')
                                             </button>
                                         </h2>
                                         <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
                                             <div class="accordion-body">
                                                 <p>
-                                                    Il fut reconnu comme le meilleur vendeur de produits cosmétiques d'Abidjan Sud.
+                                                    @lang('common.epc_reconnais_texte')
                                                 </p>
                                             </div>
                                         </div>
@@ -155,46 +155,46 @@
                 <div class="col-xl-12 col-md-12 col-lg-12 mb-30">
 <div class="elparadis-timeline">
   <h1>Notre Histoire</h1>
-  <p class="subtitle">De humble boutique à leader industriel : l’aventure extraordinaire d’El Paradis Cosmetic</p>
+  <p class="subtitle">@lang('common.humble')</p>
 
   <div class="timeline">
     <div class="container left">
       <div class="content">
         <p class="year">1994</p>
-        <p class="title">Les Débuts</p>
-        <p>Ouverture de la première boutique « El Paradis du Cosmétique I » à Port-Bouët</p>
+        <p class="title">@lang('common.debut')</p>
+        <p>@lang('common.ouverture')</p>
       </div>
     </div>
 
     <div class="container right">
       <div class="content">
         <p class="year">2007</p>
-        <p class="title">Création Officielle</p>
-        <p>Fondation d’El Paradis Cosmétique en tant qu’entreprise</p>
+        <p class="title">@lang('common.creation')</p>
+        <p>@lang('common.fondation')</p>
       </div>
     </div>
 
     <div class="container left">
       <div class="content">
         <p class="year">2010</p>
-        <p class="title">Transformation SARL</p>
-        <p>Évolution vers le statut de Société à Responsabilité Limitée</p>
+        <p class="title">@lang('common.transfo')</p>
+        <p>@lang('common.evolution')</p>
       </div>
     </div>
 
     <div class="container right">
       <div class="content">
         <p class="year">2018</p>
-        <p class="title">Expansion Majeure</p>
-        <p>Capital porté à 620 millions FCFA</p>
+        <p class="title">@lang('common.majeure')</p>
+        <p>@lang('common.capital')</p>
       </div>
     </div>
 
     <div class="container left">
       <div class="content">
         <p class="year">2025</p>
-        <p class="title">Leader Régional</p>
-        <p>Capital de 6,665 milliards FCFA - Position de leader en Afrique de l’Ouest</p>
+        <p class="title">@lang('common.leader')</p>
+        <p>@lang('common.position')</p>
       </div>
     </div>
   </div>
@@ -224,21 +224,21 @@
             <div class="row">
                 <div class="col-lg-6">
                     <div class="choose-us-style-three-info">
-                        <h2 class="title split-text">Direction & Vision</h2>
+                        <h2 class="title split-text">@lang('common.direction')</h2>
                         <p class="wow fadeInUp" data-wow-delay="200ms">
-                            Sous la direction visionnaire de M. Agbéré El Memen, El Paradis Cosmetic porte l'excellence ivoirienne à l'international.
+                            @lang('common.direction_texte')
                         </p>
                                                 <div class="profile-card-president">
   <div class="header">
     <img src="{{ asset('public/assets/img/icon/21.png') }}" alt="M. AGBÉRÉ EL MEMEN">
     <div>
-      <div class="name">M. AGBÉRÉ EL MEMEN</div>
-      <div class="title">Président Directeur Général</div>
+      <div class="name">@lang('common.memel')</div>
+      <div class="title">@lang('common.directeur')</div>
     </div>
   </div>
 
   <div class="quote">
-    "Porter l'excellence ivoirienne à l'international dans les cosmétiques, tout en valorisant la beauté africaine dans toute sa diversité."
+    "@lang('common.porter')"
   </div>
 </div>
                         <div class="d-grid mt-40">
@@ -249,8 +249,8 @@
 
 <div class="competence-leadership-card">
     <div class="icon"><i class="fas fa-users"></i></div>
-    <div class="title">Leadership</div>
-    <div class="subtitle">Vision stratégique</div>
+    <div class="title">@lang('common.leadership')</div>
+    <div class="subtitle">@lang('common.strateg')</div>
 </div>
 
 
@@ -258,20 +258,17 @@
                             <div class="feature-style-one-item wow fadeInUp" data-wow-delay="400ms">
                                 <div class="competence-leadership-card">
     <div class="icon"><i class="fas fa-globe"></i></div>
-    <div class="title">International</div>
-    <div class="subtitle">Expansion mondiale</div>
+    <div class="title">@lang('common.inter')</div>
+    <div class="subtitle">@lang('common.expansion')</div>
 </div>
 
                             </div>
                         </div>
 
                         <div class="lab-card" style="padding: 20px;margin-top: 40px;">
-  <h3>Notre Laboratoire</h3>
+  <h3>@lang('common.laboratoire')</h3>
   <ul>
-    <li>Formulation locale</li>
-    <li>Équipe de chimistes expérimentés</li>
-    <li>Respect des normes CODINORM</li>
-    <li>Innovation permanente</li>
+    @lang('common.labo_texte')
   </ul>
 </div>
 
@@ -292,8 +289,8 @@
             <div class="row">
                 <div class="col-xl-6 offset-xl-3 col-lg-8 offset-lg-2">
                     <div class="site-heading text-center">
-                        <h4 class="sub-title">Récompenses & Distinctions</h4>
-                        <h2 class="title split-text">Une reconnaissance nationale et internationale de notre excellence</h2>
+                        <h4 class="sub-title">@lang('common.distinction')</h4>
+                        <h2 class="title split-text">@lang('common.distinction_nationale')</h2>
                     </div>
                 </div>
             </div>
@@ -305,26 +302,26 @@
                     <div class="awards-container">
         <article class="award">
             <div class="award-icon">🏆</div>
-            <div class="award-title">Prix d'Excellence</div>
-            <div class="award-subtitle">Industrie Ivoirienne 2019</div>
+            <div class="award-title">@lang('common.prix')</div>
+            <div class="award-subtitle">@lang('common.industrie')</div>
         </article>
 
         <article class="award">
             <div class="award-icon">🎖️</div>
-            <div class="award-title">Label Consommateurs</div>
+            <div class="award-title">@lang('common.label')</div>
             <div class="award-subtitle">Nevaderm - Antiseptique</div>
         </article>
 
         <article class="award">
             <div class="award-icon">⭐</div>
-            <div class="award-title">Label Consommateurs</div>
+            <div class="award-title">@lang('common.label')</div>
             <div class="award-subtitle">Doudou - Parfum Enfant</div>
         </article>
 
         <article class="award">
             <div class="award-icon">👑</div>
-            <div class="award-title">Bonne Gouvernance</div>
-            <div class="award-subtitle">Meilleure Entreprise 2022</div>
+            <div class="award-title">@lang('common.bonne')</div>
+            <div class="award-subtitle">@lang('common.meilleure')</div>
         </article>
     </div>
                 </div>
@@ -341,8 +338,8 @@
             <div class="heading-left">
                 <div class="row">
                     <div class="col-lg-6">
-                        <h4 class="sub-title">Nos Produits</h4>
-                        <h2 class="title split-text">Une gamme complète de soins cosmétiques formulés à base d'actifs naturels</h2>
+                        <h4 class="sub-title">@lang('common.produit')</h4>
+                        <h2 class="title split-text">@lang('common.gamme')</h2>
                     </div>
                     <div class="col-lg-6 text-end">
                         <!-- Navigation -->
@@ -387,7 +384,7 @@
 
                                         </div>
                                     </div>
-                                    <a href="{{url(app()->getLocale().'/nos-produits/'.$prod->category->slug.'/'.$prod->slug)}}" class="btn">Voir ce produit</a>
+                                    <a href="{{url(app()->getLocale().'/nos-produits/'.$prod->category->slug.'/'.$prod->slug)}}" class="btn">@lang('common.voir_produit')</a>
                                 </div>
                             </div>
                             <!-- Single Item -->
@@ -399,7 +396,7 @@
 
                 <div class="col-lg-12">
                     <div class="text-center">
-                        <a href="{{ url(app()->getLocale().'/nos-produits') }}" class="btn-regular mt-30">Voir tous nos produits ({{$produits->count()}}) <i class="fas fa-spinner"></i></a>
+                        <a href="{{ url(app()->getLocale().'/nos-produits') }}" class="btn-regular mt-30">@lang('common.voir_nos_produits') ({{$produits->count()}}) <i class="fas fa-spinner"></i></a>
                     </div>
                 </div>
             </div>
@@ -538,6 +535,7 @@
     <!-- End Blog -->
 <?php
 use Illuminate\Support\Facades\Cookie;
+
         if(setting('site.showMsgHome')=='Oui' && Cookie::get('msgHome') ==null)
         {
         ?>

@@ -37,6 +37,16 @@
                                         <i class="fab fa-linkedin-in"></i>
                                     </a>
                                 </li>
+                                <li>
+                                    <a href="{{setting('site.SocialTikTop')}}">
+                                        <i class="fab fa-tiktok"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="{{setting('site.SocialInstagram')}}">
+                                        <i class="fab fa-instagram"></i>
+                                    </a>
+                                </li>
                             </ul>
                         </div>
                     </div>

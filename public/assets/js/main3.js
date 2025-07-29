@@ -84,7 +84,8 @@
         loop: true,
         autoHeight: false,
         autoplay: false,
-        effect: 'fade',
+        centeredSlides: true,
+        effect: 'coverflow',
         fadeEffect: { crossFade: true },
         pagination: {
           el: '.swiper-pagination',
