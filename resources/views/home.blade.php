@@ -518,8 +518,8 @@
 
         <div class="partner-section">
             <div class="partner-text">
-                <h2>Devenir Partenaire</h2>
-                <p>Rejoignez notre réseau de distributeurs et développez votre activité avec des produits de qualité reconnue.</p>
+                <h2>@lang('common.devenir')</h2>
+                <p>@lang('common.rejoignez')</p>
                 <ul>
                     <li>Point de vente physique requis</li>
                     <li>Stockage minimum garanti</li>

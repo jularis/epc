@@ -73,5 +73,8 @@ return [
     'responsa'=>"Responsabilité",
     'beaute'=>"Beauté durable",
     'trouver'=>"Où Trouver Nos Produits ?",
-    'decouvrez'=>"Découvrez nos produits dans plus de 500 points de vente à travers la Côte d'Ivoire"
+    'decouvrez'=>"Découvrez nos produits dans plus de 500 points de vente à travers la Côte d'Ivoire",
+    'devenir'=>"Devenir Partenaire",
+    'rejoignez'=>"Rejoignez notre réseau de distributeurs et développez votre activité avec des produits de qualité reconnue.",
+
 ];
