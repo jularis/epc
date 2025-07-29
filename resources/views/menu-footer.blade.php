@@ -55,11 +55,11 @@
     @endphp
 
     <li class="{{ $listItemClass }}">
-        <a href="{{ url($item->link()) }}" target="{{ $item->target }}" style="{{ $styles }}" {!! $linkAttributes ?? '' !!}>
+        <a href="{{ url(App()->getLocale().'/'.$item->link()) }}" target="{{ $item->target }}" style="{{ $styles }}" {!! $linkAttributes ?? '' !!}>
             {!! $icon !!}
-           {{ $item->title }} 
+           {{ $item->title }}
             {!! $caret !!}
-        </a> 
+        </a>
     </li>
 @endforeach
 

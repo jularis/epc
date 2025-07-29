@@ -153,7 +153,7 @@
     <script src="{{ asset('public/assets/js/gsap.js') }}"></script>
     <script src="{{ asset('public/assets/js/ScrollTrigger.min.js') }}"></script>
     <script src="{{ asset('public/assets/js/SplitText.min.js') }}"></script>
-    <script src="{{ asset('public/assets/js/main.js') }}"></script>
+    <script src="{{ asset('public/assets/js/main3.js') }}"></script>
 
 
 <script type='text/javascript' src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC_VVwtAhchqsINCTqin22MG1AzMn7d6gk&callback=Function.prototype"></script>
