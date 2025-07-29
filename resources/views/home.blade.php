@@ -542,7 +542,7 @@
 <?php
 use Illuminate\Support\Facades\Cookie;
 // setting('site.showMsgHome')=='Oui' &&
-        if(Cookie::get('msgHome') ==null)
+        if(setting('site.showMsgHome')=='Oui' && Cookie::get('msgHome') ==null)
         {
         ?>
   <div id="subscribe-me" class="modal fade subscribe-me sb sb-animation-fade" style="display: block;overflow: hidden;padding: 0; width:102%;">
