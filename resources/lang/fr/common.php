@@ -83,5 +83,6 @@ return [
     'nosgammes'=>"Nos Gammes",
     'rapides'=>"Liens rapides",
     'presentation'=>"EL Paradis Cosmetic (EPC) est une entreprise industrielle ivoirienne spécialisée dans la fabrication et la distribution de produits cosmiques, née d’une vision claire : valoriser la beauté en générale et africaine en particulier avec des soins sûrs, efficaces et accessibles.",
+    'audio'=>"audio-signature-french",
 
 ];

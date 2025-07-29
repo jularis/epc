@@ -83,5 +83,6 @@ return [
     'nosgammes' => "Nossas Linhas",
     'rapides' => "Links rápidos",
     'presentation' => "A EL Paradis Cosmetic (EPC) é uma empresa industrial marfinense especializada na fabricação e distribuição de produtos cosméticos, nascida de uma visão clara: valorizar a beleza em geral e a beleza africana em particular com cuidados seguros, eficazes e acessíveis.",
+    'audio'=>"audio-signature-french",
 
 ];

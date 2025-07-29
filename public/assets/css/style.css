@@ -18522,12 +18522,13 @@ footer.dark-optional .footer-bottom p {
     width: 100%;
     padding-left: 70px;
     padding-right: 25px;
+    margin-left: 86px;
   }
   .elparadis-timeline .container::before {
     left: 15px;
   }
   .elparadis-timeline .right {
-    left: 0%;
+    left: -25%;
   }
 }
 

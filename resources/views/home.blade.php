@@ -101,8 +101,10 @@
 
                             <figure>
                             <img src="{{ asset('public/assets/img/magasinepc.jpg') }}" alt="Image Not Found">
-                            <figcaption><i>@lang('common.epc_debut')</i></figcaption>
+                            <figcaption><i>@lang('common.epc_debut')</i><br>
+                            <br></figcaption>
                             </figure>
+
                         </div>
                     </div>
                     <div class="col-lg-6 pl-60 pl-md-15 pl-xs-15">
@@ -568,10 +570,14 @@ use Illuminate\Support\Facades\Cookie;
       }
       ?>
 
+      @php
+    $audio = __('common.audio');
+@endphp
+
 @endsection
 
 <audio autoplay>
-  <source src="<?php echo asset('public/assets/img/audio-signature-french-ogg.ogg'); ?>" type="audio/ogg">
-  <source src="<?php echo asset('public/assets/img/audio-signature-french.mp3'); ?>" type="audio/mpeg">
+  <source src="<?php echo asset('public/assets/img/'.$audio.'-ogg.ogg'); ?>" type="audio/ogg">
+  <source src="<?php echo asset('public/assets/img/'.$audio.'.mp3'); ?>" type="audio/mpeg">
   Your browser does not support the audio element.
 </audio>
