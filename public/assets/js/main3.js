@@ -82,6 +82,7 @@
     const _0x33adcd = new Swiper('.banner-fade', {
         direction: 'horizontal',
         loop: true,
+        autoHeight: false,
         autoplay: false,
         effect: 'fade',
         fadeEffect: { crossFade: true },
