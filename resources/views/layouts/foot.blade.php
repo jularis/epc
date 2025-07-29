@@ -52,19 +52,19 @@
                     </div>
                     <div class="col-lg-2 col-md-6 footer-item">
                         <div class="f-item link">
-                            <h4 class="widget-title">Nos Gammes</h4>
+                            <h4 class="widget-title">@lang('common.nosgammes')</h4>
                             {{ menu('gammes-produits','menu-footer') }}
                         </div>
                     </div>
                     <div class="col-lg-2 col-md-6 footer-item">
                         <div class="f-item link">
-                            <h4 class="widget-title">Liens rapides</h4>
+                            <h4 class="widget-title">@lang('common.rapides')</h4>
                             {{ menu('liens-rapides','menu-footer') }}
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 footer-item">
                         <div class="f-item newsletter">
-                            <h4 class="widget-title">Contactez-nous</h4>
+                            <h4 class="widget-title">@lang('common.contact')</h4>
                             <ul class="contact-list-two">
                                 <li>
                                     <div class="icon">
@@ -106,7 +106,7 @@
                     </div>
                     <div class="col-lg-6 text-end">
                         <ul class="link-list">
-                            <li>
+                            {{-- <li>
                                 <a href="#">Politique de Confidentialit</a>
                             </li>
                             <li>
@@ -114,7 +114,7 @@
                             </li>
                             <li>
                                 <a href="#">Mentions Légales</a>
-                            </li>
+                            </li> --}}
                         </ul>
                     </div>
                 </div>

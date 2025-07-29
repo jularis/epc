@@ -5,9 +5,9 @@ return [
     'contact' => "Contactez-nous",
     'accueil' => "Accueil",
     'produit' => "Nos produits",
-    'all'=>"Toutes",
+    'adresse'=>"Adresse",
     'details'=>"Details",
-    'phone'=>"Telephone",
+    'phone'=>"Téléphone",
     'email'=>"Email",
     'depuis'=>"Dépuis",
     'about'=>"Qui sommes-nous?",
@@ -76,5 +76,11 @@ return [
     'decouvrez'=>"Découvrez nos produits dans plus de 500 points de vente à travers la Côte d'Ivoire",
     'devenir'=>"Devenir Partenaire",
     'rejoignez'=>"Rejoignez notre réseau de distributeurs et développez votre activité avec des produits de qualité reconnue.",
+    'points'=>"<li>Point de vente physique requis</li>
+                    <li>Stockage minimum garanti</li>
+                    <li>Respect de notre politique de marque</li>
+                    <li>Relation commerciale durable</li>",
+    'nosgammes'=>"Nos Gammes",
+    'rapides'=>"Liens rapides",
 
 ];

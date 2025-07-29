@@ -151,19 +151,19 @@
                             <ul>
                                 <li>
                                     <div class="content">
-                                        <p>Adresse</p>
+                                        <p>@lang('common.adresse')</p>
                                         <strong>{{setting('site.ContactAdresse')}}</strong>
                                     </div>
                                 </li>
                                 <li>
                                     <div class="content">
-                                        <p>Email</p>
+                                        <p>@lang('common.email')</p>
                                         <strong>{{setting('site.ContactEmail')}}</strong>
                                     </div>
                                 </li>
                                 <li>
                                     <div class="content">
-                                        <p>Contact</p>
+                                        <p>@lang('common.phone')</p>
                                         <strong>{{ setting('site.ContactMobile')}}</strong>
                                     </div>
                                 </li>

@@ -521,16 +521,13 @@
                 <h2>@lang('common.devenir')</h2>
                 <p>@lang('common.rejoignez')</p>
                 <ul>
-                    <li>Point de vente physique requis</li>
-                    <li>Stockage minimum garanti</li>
-                    <li>Respect de notre politique de marque</li>
-                    <li>Relation commerciale durable</li>
+                    @lang('common.points')
                 </ul>
                 {{-- <a href="#" class="partner-button">Candidater Maintenant</a> --}}
 
                 <div class="contact-info">
-                    <span>📧 info@elparadiscosmetic.net</span>
-                    <span>📞 +225 0769563620</span>
+                    <span>📧 {{setting('site.ContactEmail')}}</span>
+                    <span>📞 {{ setting('site.ContactMobile')}}</span>
                 </div>
             </div>
             <div class="partner-image">
