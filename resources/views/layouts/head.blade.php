@@ -143,7 +143,7 @@
                             <img src="{{ asset('storage/app/public/'.setting('site.logo')) }}" alt="Logo">
                         </div>
                         <p>
-                            {{setting('site.description')}}
+                            @lang('common.presentation')
                         </p>
                     </div>
                     <div class="widget address">

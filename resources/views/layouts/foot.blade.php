@@ -14,7 +14,7 @@
                                 <img src="{{ asset('storage/app/public/'.setting('site.logo')) }}" alt="Image Not Found">
                             </div>
                             <p>
-                                {{setting('site.description')}}
+                                @lang('common.presentation')
                             </p>
                             <ul class="footer-social">
                                 <li>
