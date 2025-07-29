@@ -42,7 +42,39 @@
                                         @endforeach
                             </ul>
                         </div>
-                        <div>
+                        <div class="social">
+                            <ul class="">
+                            <li>
+                                    <a href="{{setting('site.SocialFacebook')}}">
+                                        <i class="fab fa-facebook-f"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="{{setting('site.SocialTwitter')}}">
+                                        <i class="fab fa-twitter"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="{{setting('site.SocialYoutube')}}">
+                                        <i class="fab fa-youtube"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="{{setting('site.SocialLinkedin')}}">
+                                        <i class="fab fa-linkedin-in"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="{{setting('site.SocialTikTop')}}">
+                                        <i class="fab fa-tiktok"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="{{setting('site.SocialInstagram')}}">
+                                        <i class="fab fa-instagram"></i>
+                                    </a>
+                                </li>
+                        </ul>
                         </div>
                     </div>
                 </div>
