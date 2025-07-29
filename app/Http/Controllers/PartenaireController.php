@@ -13,7 +13,7 @@ class PartenaireController extends Controller
      */
     public function index()
     {
-        $data['pageTitle']='Où Trouver Nos Produits ?';
+        $data['pageTitle']= __('common.trouver');
 
         $data['metaDescription']='';
 
