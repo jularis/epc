@@ -14,7 +14,7 @@ return [
     'text_about' => "EL Paradis Cosmetic (EPC) is an Ivorian industrial company specialized in the manufacturing and distribution of cosmetic products, born from a clear vision: to enhance beauty in general and African beauty in particular through safe, effective, and accessible care.",
     'epc_debut' => "El Paradis du Cosmétique I - Port-Bouët, 1994",
     'epc_annee' => "The Beginnings (1994)",
-    'epc_texte' => "It all started in 1994, in the Port-Bouët district behind the wharf, where Mr. Agbéré El Memen decided to open his own shop called 'El Paradis du Cosmétique I'. This store quickly became a reference in the sector thanks to his sense of service, understanding of customer needs, and the quality of the products offered.",
+    'epc_texte' => "It all started in 1994, in the Port-Bouët district behind the wharf, where Mr. Agbéré El Memen decided to open his own shop called « El Paradis du Cosmétique I ». This store quickly became a reference in the sector thanks to his sense of service, understanding of customer needs, and the quality of the products offered.",
     'epc_reconnaissance' => "Recognition",
     'epc_reconnais_texte' => "He was recognized as the best cosmetics seller in South Abidjan.",
     'humble' => "From humble shop to industrial leader: the extraordinary journey of El Paradis Cosmetic",

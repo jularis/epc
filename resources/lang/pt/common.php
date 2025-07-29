@@ -15,7 +15,7 @@ return [
     'text_about' => "EL Paradis Cosmetic (EPC) é uma empresa industrial marfinense especializada na fabricação e distribuição de produtos cosméticos, nascida de uma visão clara: valorizar a beleza em geral e a beleza africana em particular com cuidados seguros, eficazes e acessíveis.",
     'epc_debut' => "El Paradis du Cosmétique I - Port-Bouët, 1994",
     'epc_annee' => "Os Primeiros Passos (1994)",
-    'epc_texte' => "Tudo começou em 1994, no bairro de Port-Bouët atrás do cais, onde o Sr. Agbéré El Memen decidiu abrir sua própria loja chamada 'El Paradis du Cosmétique I'. Esta loja rapidamente se tornou referência no setor graças ao seu senso de serviço, conhecimento das necessidades dos clientes e à qualidade dos produtos oferecidos.",
+    'epc_texte' => "Tudo começou em 1994, no bairro de Port-Bouët atrás do cais, onde o Sr. Agbéré El Memen decidiu abrir sua própria loja chamada « El Paradis du Cosmétique I ». Esta loja rapidamente se tornou referência no setor graças ao seu senso de serviço, conhecimento das necessidades dos clientes e à qualidade dos produtos oferecidos.",
     'epc_reconnaissance' => "Reconhecimento",
     'epc_reconnais_texte' => "Ele foi reconhecido como o melhor vendedor de cosméticos do sul de Abidjan.",
     'humble' => "De uma loja humilde a líder industrial: a extraordinária jornada da El Paradis Cosmetic",
