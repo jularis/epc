@@ -13,7 +13,7 @@
                     <h1>{{ $pageTitle }} </h1>
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb">
-                            <li><a href="#"><i class="fas fa-home"></i> @lang('common.accueil')</a></li>
+                            <li><a href="{{url(app()->getLocale())}}"><i class="fas fa-home"></i> @lang('common.accueil')</a></li>
                             <li class="active">{{ $pageTitle }}</li>
                         </ol>
                     </nav>
@@ -31,7 +31,7 @@
                     @foreach ($partenaires as $part)
 
                     <div class="col-lg-3 col-md-12 mt-30 card2">
-                        <img src="{{ asset('storage/app/public/'.str_replace('\\','/',$part->image)) }}" alt="{{$part->nom}}" style="height: 325px;">
+                        <a href="{{ $part->siteweb }}" target="_blank"><img src="{{ asset('storage/app/public/'.str_replace('\\','/',$part->image)) }}" alt="{{$part->nom}}" style="height: 325px;"></a>
                         <div class="card-title"><a href="{{ $part->siteweb }}" target="_blank">{{$part->nom}}</a> </div>
                         <div class="card-desc">{{$part->type_surface}}</div>
                     </div>
