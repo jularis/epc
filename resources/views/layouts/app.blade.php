@@ -228,7 +228,7 @@ swiper.autoplay.stop();
 
 <?php
 use Illuminate\Support\Facades\Cookie;
-if(setting('site.showMsgHome')=='Oui' && Cookie::get('msgHome') ==null)
+if(Cookie::get('msgHome') ==null)
 {
 ?>
 <script type="text/javascript">

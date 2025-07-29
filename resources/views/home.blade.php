@@ -413,8 +413,8 @@
             <div class="row">
                 <div class="col-xl-6 offset-xl-3 col-lg-8 offset-lg-2">
                     <div class="site-heading text-center">
-                        <h4 class="sub-title">Nos Actifs Naturels</h4>
-                        <p class="subtitle" style="padding: 0;">Des ingrédients authentiques pour une beauté respectueuse de votre peau</p>
+                        <h4 class="sub-title">@lang('common.actifs')</h4>
+                        <p class="subtitle" style="padding: 0;">@lang('common.ingredients')</p>
                     </div>
                 </div>
             </div>
@@ -426,23 +426,23 @@
                     <div class="liste-actifs">
       <div class="carte-actif">
         <img src="{{ asset('public/assets/img/huiledArgan.jpg') }}" alt="Huile d'Argan">
-        <h3 class="nom-actif">Huile d'Argan</h3>
-        <p class="description-actif">Hydratation intense et nutrition profonde</p>
+        <h3 class="nom-actif">@lang('common.huile')</h3>
+        <p class="description-actif">@lang('common.hydratation')</p>
       </div>
       <div class="carte-actif">
         <img src="{{ asset('public/assets/img/curcuma.jpg') }}" alt="Curcuma">
-        <h3 class="nom-actif">Curcuma</h3>
-        <p class="description-actif">Éclat naturel et propriétés purifiantes</p>
+        <h3 class="nom-actif">@lang('common.curcuma')</h3>
+        <p class="description-actif">@lang('common.naturel')</p>
       </div>
       <div class="carte-actif">
         <img src="{{ asset('public/assets/img/karite.jpg') }}" alt="Beurre de Karité">
-        <h3 class="nom-actif">Beurre de Karité</h3>
-        <p class="description-actif">Protection et réparation naturelle</p>
+        <h3 class="nom-actif">@lang('common.beurre')</h3>
+        <p class="description-actif">@lang('common.protection')</p>
       </div>
       <div class="carte-actif">
         <img src="{{ asset('public/assets/img/nila.jpg') }}" alt="Poudre de Nila">
-        <h3 class="nom-actif">Poudre de Nila</h3>
-        <p class="description-actif">Tradition africaine authentique</p>
+        <h3 class="nom-actif">@lang('common.poudre')</h3>
+        <p class="description-actif">@lang('common.tradition')</p>
       </div>
     </div>
 
@@ -454,7 +454,7 @@
             <div class="row">
                 <div class="col-xl-6 offset-xl-3 col-lg-8 offset-lg-2">
                     <div class="site-heading text-center">
-                        <h4 class="sub-title">Nos Engagements</h4>
+                        <h4 class="sub-title">@lang('common.engagement')</h4>
                     </div>
                 </div>
             </div>
@@ -466,23 +466,23 @@
         <div class="liste-engagements">
             <div class="carte-engagement">
                 <img src="{{ asset('public/assets/img/icon-hydro.png') }}" alt="Sans Hydroquinone">
-                <h4 class="nom-engagement">Sans Hydroquinone</h4>
-                <p class="description-engagement">Formules respectueuses</p>
+                <h4 class="nom-engagement">@lang('common.hydroquinone')</h4>
+                <p class="description-engagement">@lang('common.formules')</p>
             </div>
             <div class="carte-engagement">
                 <img src="{{ asset('public/assets/img/icon-peau.png') }}" alt="Peau Noire">
-                <h4 class="nom-engagement">Peau Noire</h4>
-                <p class="description-engagement">Respect et valorisation</p>
+                <h4 class="nom-engagement">@lang('common.peau')</h4>
+                <p class="description-engagement">@lang('common.respect')</p>
             </div>
             <div class="carte-engagement">
                 <img src="{{ asset('public/assets/img/icon-securite.png') }}" alt="Sécurité">
-                <h4 class="nom-engagement">Sécurité</h4>
-                <p class="description-engagement">Tests dermatologiques</p>
+                <h4 class="nom-engagement">@lang('common.securite')</h4>
+                <p class="description-engagement">@lang('common.test')</p>
             </div>
             <div class="carte-engagement">
                 <img src="{{ asset('public/assets/img/icon-responsabilite.png') }}" alt="Responsabilité">
-                <h4 class="nom-engagement">Responsabilité</h4>
-                <p class="description-engagement">Beauté durable</p>
+                <h4 class="nom-engagement">@lang('common.responsa')</h4>
+                <p class="description-engagement">@lang('common.beaute')</p>
             </div>
             </div>
 
@@ -495,14 +495,21 @@
     ============================================= -->
     <div class="blog-area home-blog-style-two default-padding bottom-less" style="background-color: #f9f9f3;">
         <div class="container">
-        <h1 class="text-center">Où Trouver Nos Produits ?</h1>
-        <p class="subtitle">Découvrez nos produits dans plus de 500 points de vente à travers la Côte d'Ivoire</p>
+        <h1 class="text-center">@lang('common.trouver')</h1>
+        <p class="subtitle">@lang('common.decouvrez')</p>
 
         <div class="cards">
             @foreach ($partenaires as $part)
 
-            <div class="card">
-                <img src="{{ asset('storage/app/public/'.str_replace('\\','/',$part->image)) }}" alt="{{$part->nom}}">
+            <div class="card" style="height: 160px;">
+                <div class="card-img" style="
+    width: 100%;
+    height: 50%;
+    overflow: hidden;
+">
+<img src="{{ asset('storage/app/public/'.str_replace('\\','/',$part->image)) }}" alt="{{$part->nom}}" style="width: auto !important;height: 100% !important;">
+                </div>
+
                 <div class="card-title"><a href="{{ $part->siteweb }}" target="_blank">{{$part->nom}}</a> </div>
                 <div class="card-desc">{{$part->type_surface}}</div>
             </div>
@@ -535,8 +542,8 @@
     <!-- End Blog -->
 <?php
 use Illuminate\Support\Facades\Cookie;
-
-        if(setting('site.showMsgHome')=='Oui' && Cookie::get('msgHome') ==null)
+// setting('site.showMsgHome')=='Oui' &&
+        if(Cookie::get('msgHome') ==null)
         {
         ?>
   <div id="subscribe-me" class="modal fade subscribe-me sb sb-animation-fade" style="display: block;overflow: hidden;padding: 0; width:102%;">
