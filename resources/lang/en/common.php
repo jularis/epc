@@ -85,4 +85,5 @@ return [
     'audio'=>"audio-signature-english",
     'voirtout'=>"View all",
     'actualite'=>"Our news",
+    'nosactifs'=>"Our assets and liabilities",
 ];

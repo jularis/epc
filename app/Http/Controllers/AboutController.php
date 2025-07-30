@@ -37,14 +37,14 @@ class AboutController extends Controller
      */
     public function show(string $id, string $slug)
     {
-       $data['pageTitle']='Qui sommes-nous?';
+       $data['pageTitle']= __('common.about');
 
         $data['metaDescription']='';
 
 
         if($slug == 'recompenses-et-distinctions')
         {
-            $data['pageTitle']='Récompenses et Distinctions';
+            $data['pageTitle']= __('common.distinction');;
     $data['recompenses'] = Distinction::where('status','PUBLISHED')->orderby('id','desc')->get();
 
         return view('recompense',$data);
@@ -63,8 +63,8 @@ $data['about'] = Page::where('slug',$slug)->first();
         $data['metaDescription']='';
 
 
-        $data['pageTitle']='Récompenses et Distinctions';
-    $data['detail'] = Distinction::where('slug',$url)->orderby('id','desc')->get();
+        $data['pageTitle']= __('common.distinction');
+    $data['detail'] = Distinction::where('slug',$url)->first();
 
         return view('recompense-detail',$data);
 
@@ -73,7 +73,7 @@ $data['about'] = Page::where('slug',$slug)->first();
 
     public function mission(string $id)
     {
-       $data['pageTitle']='Qui sommes-nous?';
+       $data['pageTitle']= __('common.about');
 
         $data['metaDescription']='';
 
@@ -83,7 +83,7 @@ $data['about'] = Page::where('slug',$slug)->first();
 
     public function engagement(string $id)
     {
-       $data['pageTitle']='Nos actifs et engagement?';
+       $data['pageTitle']= __('common.nosactifs');
 
         $data['metaDescription']='';
 

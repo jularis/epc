@@ -86,5 +86,6 @@ return [
     'audio'=>"audio-signature-french",
     'voirtout'=>"Ver tudo",
     'actualite'=>"As nossas notícias",
+    'nosactifs'=>"Os nossos ativos e compromissos",
 
 ];
