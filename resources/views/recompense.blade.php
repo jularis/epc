@@ -59,27 +59,5 @@
         </div>
     </div>
     <!-- End recompuct -->
-    <!-- Start Gallery
-    ============================================= -->
-    <div class="gallery-area gallery-grid default-padding mt--30">
-        <div class="container">
-            <div class="row">
-                @foreach ($recompenses as $recomp)
-
-                <!-- Single Item -->
-                <div class="col-lg-4 col-md-12 mt-30">
-                    <div class="gallery-style-one-item">
-                        <img src="{{ asset('storage/app/public/'.$recomp->image) }}" alt="Image Not Found">
-                        <a class="item popup-gallery" href="{{ asset('storage/app/public/'.$recomp->image) }}"><i class="fas fa-link"></i></a>
-                    </div>
-                </div>
-                <!-- End Single Item -->
-                @endforeach
-            </div>
-        </div>
-    </div>
-    <!-- End Gallery -->
-
-
 
 @endsection
