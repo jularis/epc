@@ -43,7 +43,7 @@ class ActualiteController  extends Controller
     public function show(string $id, string $slug)
     {
 
-        $data['pageTitle']='Nos actualités';
+        $data['pageTitle']= __('common.actualite');
         $data['metaDescription']='';
 
         $data['detail'] = Post::where('slug',$slug)->first();

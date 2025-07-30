@@ -84,4 +84,5 @@ return [
     'presentation' => "EL Paradis Cosmetic (EPC) is an Ivorian industrial company specialized in the manufacturing and distribution of cosmetic products, born from a clear vision: to promote beauty in general and African beauty in particular through safe, effective, and accessible care.",
     'audio'=>"audio-signature-english",
     'voirtout'=>"View all",
+    'actualite'=>"Our news",
 ];

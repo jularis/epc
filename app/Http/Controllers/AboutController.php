@@ -57,6 +57,19 @@ $data['about'] = Page::where('slug',$slug)->first();
 
     }
 
+    public function showDistinction(string $id, string $slug, string $url)
+    {
+
+        $data['metaDescription']='';
+
+
+        $data['pageTitle']='Récompenses et Distinctions';
+    $data['detail'] = Distinction::where('slug',$url)->orderby('id','desc')->get();
+
+        return view('recompense-detail',$data);
+
+
+    }
 
     public function mission(string $id)
     {

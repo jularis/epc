@@ -31,6 +31,7 @@ Route::group([
     Route::get('/', [HomeController::class, 'index'])->name('accueil');
     Route::get('sitemap', [HomeController::class, 'sitemap']);
     Route::get('/qui-sommes-nous/{slug}', [AboutController::class, 'show']);
+    Route::get('/qui-sommes-nous/{id}/{slug}', [AboutController::class, 'showDistinction']);
 
     Route::get('/notre-mission-reveler-la-beaute-avec-responsabilite', [AboutController::class, 'mission']);
 

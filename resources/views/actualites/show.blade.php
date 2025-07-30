@@ -10,12 +10,12 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 offset-lg-2">
-                    <h1>{{ $detail->title }} </h1>
+                    <h1><?php echo $detail->getTranslatedAttribute('title', app()->getLocale()); ?> </h1>
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb">
                             <li><a href="{{url(app()->getLocale())}}"><i class="fas fa-home"></i> @lang('common.accueil')</a></li>
                             <li class="">{{ $pageTitle }}</li>
-                            <li class="active">{{ $detail->title }}</li>
+                            <li class="active"><?php echo $detail->getTranslatedAttribute('title', app()->getLocale()); ?></li>
                         </ol>
                     </nav>
                 </div>
