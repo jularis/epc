@@ -3110,7 +3110,7 @@ button {
 .banner-area div,
 .banner-area {
 	height: 100vh;
-    top: 9px;
+    /* top: 9px; */
 }
 
 .banner-area div.swiper-slide .row div {
