@@ -12,7 +12,7 @@ class ActualiteController  extends Controller
      */
     public function index()
     {
-        $data['pageTitle']='Nos actualités';
+        $data['pageTitle']= __('common.actualite');
 
         $data['metaDescription']='';
 

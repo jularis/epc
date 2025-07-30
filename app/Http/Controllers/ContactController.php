@@ -13,7 +13,7 @@ class ContactController extends Controller
      */
     public function index()
     {
-        $data['pageTitle'] = "Contactez-nous";
+        $data['pageTitle'] = __('common.contact');
         $data['metaDescription']='';
         return view('contact',$data);
     }

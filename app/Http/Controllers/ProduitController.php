@@ -14,7 +14,7 @@ class ProduitController extends Controller
     public function index(string $id)
     {
 
-        $data['pageTitle']='Nos produits';
+        $data['pageTitle']= __('common.produit');
 
         $data['metaDescription']='';
 
@@ -26,7 +26,7 @@ class ProduitController extends Controller
     public function produits(string $id, string $slug)
     {
 
-        $data['pageTitle']='Nos produits';
+        $data['pageTitle']= __('common.produit');
 
         $data['metaDescription']='';
 
@@ -58,7 +58,7 @@ class ProduitController extends Controller
      */
     public function show(string $id, string $slug, string $url)
     {
-        $data['pageTitle']='Nos produits';
+        $data['pageTitle']= __('common.produit');
         $data['metaDescription']='';
 
         $data['detail'] = Produit::where('slug',$url)->first();
