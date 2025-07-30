@@ -8,5 +8,5 @@ use TCG\Voyager\Traits\Translatable;
 class Slider extends Model
 {
     use Translatable;
-    protected $translatable = ['titre', 'description','url','boutonName'];
+    protected $translatable = ['titre', 'description','url','boutonName','hautTitre'];
 }

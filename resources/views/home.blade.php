@@ -23,15 +23,16 @@
                             <div class="row align-center">
                                 <div class="col-lg-6">
                                     <div class="content right-info">
-                                        <p style="color: hsl(43, 74%, 42%);"> {{$slide->hautTitre}} </p>
+                                        <p style="color: hsl(43, 74%, 42%);"> <?php echo $slide->getTranslatedAttribute('hautTitre', app()->getLocale()); ?></p>
                                         <h2>{{$slide->titre}}</h2>
                                         <div class="info">
                                             <p>
-                                                {{$slide->description}}
+                                                <?php echo $slide->getTranslatedAttribute('description', app()->getLocale()); ?>
+
                                             </p>
                                             @if($slide->url)
                                                 <div class="button">
-                                                <a class="btn btn-md btn-gradient animation" href="{{$slide->url}}">{{$slide->boutonName}}</a>
+                                                <a class="btn btn-md btn-gradient animation" href="<?php echo $slide->getTranslatedAttribute('url', app()->getLocale()); ?>"><?php echo $slide->getTranslatedAttribute('boutonName', app()->getLocale()); ?></a>
                                             </div>
                                             @endif
 
