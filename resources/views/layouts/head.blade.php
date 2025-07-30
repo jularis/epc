@@ -22,7 +22,7 @@
                         <div class="dropdown">
                             <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                                 <img src="<?php if(app()->getLocale() == "fr"){echo asset('public/flags/fr.jpg');}elseif (app()->getLocale() == "en") {
-                                        echo asset('public/flags/en.jpg') ; }elseif (app()->getLocale() == "pt") { echo asset('public/flags/pt.jpg') ; } ?>">
+                                        echo asset('public/flags/en.jpg') ; }elseif (app()->getLocale() == "pt") { echo asset('public/flags/pt.jpg') ; } ?>" style="max-width: 35px;">
                                 <?php if(app()->getLocale() == "fr"){echo "French";}elseif (app()->getLocale() == "en") {
                                         echo "English" ; }elseif (app()->getLocale() == "pt") { echo "Portugal" ; } ?> <i class="fas fa-angle-down"></i>
                             </button>
