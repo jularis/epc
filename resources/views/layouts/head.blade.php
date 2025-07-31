@@ -128,6 +128,9 @@
                                         </div>
                                     </a>
                                 </li>
+                                <li class="button">
+                                <a href="#">Catalogue</a>
+                            </li>
                             </ul>
 
                         </div>
