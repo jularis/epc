@@ -97,7 +97,7 @@
                         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
                             <i class="fa fa-bars"></i>
                         </button>
-                        <a class="navbar-brand href="{{ url('/'.app()->getLocale())}}"><img src="{{ asset('storage/app/public/'.setting('site.logo')) }}" style="max-width: 75px" alt="" class="logo"></a>
+                        <a class="navbar-brand" href="{{ url('/'.app()->getLocale())}}"><img src="{{ asset('storage/app/public/'.setting('site.logo')) }}" style="max-width: 75px" alt="" class="logo"></a>
 
                     </div>
                 </div>
