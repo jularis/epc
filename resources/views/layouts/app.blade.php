@@ -26,6 +26,7 @@
     <link href="{{ asset('public/assets/css/style.css') }}" rel="stylesheet">
     <link href="{{ asset('public/style.css') }}" rel="stylesheet">
     <link rel="stylesheet" href="{{ asset('public/css/pli.css') }}">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.css" >
     <!-- ========== End Stylesheet ========== -->
 
 
@@ -154,7 +155,30 @@
     <script src="{{ asset('public/assets/js/ScrollTrigger.min.js') }}"></script>
     <script src="{{ asset('public/assets/js/SplitText.min.js') }}"></script>
     <script src="{{ asset('public/assets/js/main3.js') }}"></script>
+ <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
 
+<script>
+ @if(Session::has('message'))
+ var type = "{{ Session::get('alert-type','info') }}"
+ switch(type){
+    case 'info':
+    toastr.info(" {{ Session::get('message') }} ");
+    break;
+
+    case 'success':
+    toastr.success(" {{ Session::get('message') }} ");
+    break;
+
+    case 'warning':
+    toastr.warning(" {{ Session::get('message') }} ");
+    break;
+
+    case 'error':
+    toastr.error(" {{ Session::get('message') }} ");
+    break;
+ }
+ @endif
+</script>
 
 <script type='text/javascript' src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC_VVwtAhchqsINCTqin22MG1AzMn7d6gk&callback=Function.prototype"></script>
 

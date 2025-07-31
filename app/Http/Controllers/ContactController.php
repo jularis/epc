@@ -37,9 +37,35 @@ class ContactController extends Controller
      */
     public function store(Request $request)
     {
-        $email = $request->email;
+
         $contact = new Newsletter();
-        return view('home');
+        $contact->nom = $request->nom;
+        $contact->email = $request->email;
+        $existe = Newsletter::where('email',$request->email)->first();
+
+        if($existe !=null)
+        {
+            $notification = array(
+'message' =>"Votre adresse a déjà été enregistrée à la newsletter.",
+'alert-type' => 'error'
+            );
+        }else{
+    $contact->save();
+        if($contact){
+            $notification = array(
+'message' =>"Votre abonnement à notre newsletter a été bien enregistré.",
+'alert-type' => 'success'
+            );
+        }
+        else{
+            $notification = array(
+'message' =>"Une erreur s'est produite pendant votre abonnement. Veuillez réessayer plutard",
+'alert-type' => 'error'
+            );
+        }
+        }
+
+       return redirect()->back()->with($notification);
     }
 
     /**
