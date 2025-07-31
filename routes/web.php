@@ -38,6 +38,7 @@ Route::group([
     Route::get('/nos-actifs-and-engagements', [AboutController::class, 'engagement']);
 
     Route::get('/contactez-nous', [ContactController::class, 'index']);
+    Route::post('/contactez-nous', [ContactController::class, 'store']);
 
     Route::get('/ou-trouver-nos-produits', [PartenaireController::class, 'index']);
 

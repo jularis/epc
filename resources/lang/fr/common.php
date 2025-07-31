@@ -87,4 +87,9 @@ return [
     'voirtout'=>"Tout voir",
     'actualite'=>"Nos actualités",
     'nosactifs'=>"Nos actifs et engagements",
+    'newsletter'=>"Abonnez-vous à notre newsletter, nous ne faisons aucun spam.",
+    'simple'=>"Souscription simple",
+    'rapide'=>"Rapide",
+    'subscribe'=>"S'abonner",
+    'email_text'=>"Votre adresse e-mail",
 ];

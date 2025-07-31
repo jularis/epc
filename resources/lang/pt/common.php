@@ -87,5 +87,10 @@ return [
     'voirtout'=>"Ver tudo",
     'actualite'=>"As nossas notícias",
     'nosactifs'=>"Os nossos ativos e compromissos",
+    'newsletter'=>"Assine a nossa newsletter, nós não enviamos spam.",
+    'simple'=>"Subscrição Simples",
+    'rapide'=>"Rápido",
+    'subscribe'=>"Subscrever",
+    'email_text'=>"O seu e-mail",
 
 ];

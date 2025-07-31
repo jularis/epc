@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Newsletter;
 use Illuminate\Http\Request;
 
 class ContactController extends Controller
@@ -36,7 +37,9 @@ class ContactController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $email = $request->email;
+        $contact = new Newsletter();
+        return view('home');
     }
 
     /**

@@ -540,6 +540,33 @@
     </div>
          </div>
     <!-- End Blog -->
+     <!-- Start Newsletter
+    ============================================= -->
+    <div class="newsletter-area default-padding-bottom bg-gray-gradient-secondary">
+        <div class="container">
+            <div class="newsletter-style-one-items bg-theme text-center bg-cover" style="background-image: url({{ asset('public/assets/img/shape/banner-8.jpg') }});">
+                <div class="shape">
+                    <img src="{{ asset('public/assets/img/illustration/9.png') }}" alt="Image Not Found">
+                    <img src="{{ asset('public/assets/img/shape/48.png') }}" alt="Image Not Found">
+                </div>
+                <div class="row">
+                    <div class="col-xl-8 offset-xl-2 col-lg-10 offset-lg-1">
+                        <h2 class="title split-text">@lang('common.newsletter')</h2>
+                        <ul class="list-check">
+                            <li>@lang('common.simple')</li>
+                            <li>@lang('common.rapide')</li>
+                        </ul>
+                        <form action="{{url(app()->getLocale().'/contactez-nous')}}"  method="POST">
+                            @csrf
+                            <input type="email" placeholder="@lang('common.email_text')" class="form-control" name="email" required>
+                            <button type="submit">@lang('common.subscribe')</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Newsletter -->
 <?php
 use Illuminate\Support\Facades\Cookie;
 // setting('site.showMsgHome')=='Oui' &&
