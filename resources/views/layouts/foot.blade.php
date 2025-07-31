@@ -24,7 +24,7 @@
                                 </li>
                                 <li>
                                     <a href="{{setting('site.SocialTwitter')}}">
-                                        <img src="{{ asset('public/assets/img/icon/x.png')}}" alt="Icon">
+                                        <i class="fab fa-twitter"></i>
                                     </a>
                                 </li>
                                 <li>

@@ -115,8 +115,8 @@ Sidebar heading:  20px 'Outfit', sans-serif
 	--dark-secondary: #033120;
 	--dark-optional: #00194C;
 	--white: #ffffff;
-	--color-primary: #009640;
-	--color-secondary: #3caa35;
+	--color-primary: #008F39;
+	--color-secondary: #43A335;
 	--color-style-two: #6374ff;
 	--color-style-three: #33bfff;
 	--color-style-four: #ffe824;
@@ -503,7 +503,7 @@ p {
 }
 
 .bg-dark {
-	background-color: #637761 !important;
+	background-color: var(--color-secondary) !important;
 }
 
 .dark-secondary {
@@ -18509,7 +18509,7 @@ footer.dark-optional .footer-bottom p {
   color: #333;
 }
 .elparadis-timeline .title {
-    color: #009640;
+    color: var(--color-secondary);
     font-weight: bold;
     margin-bottom: 0.5rem;
     font-size: 20px;
@@ -18569,7 +18569,7 @@ footer.dark-optional .footer-bottom p {
 
     .profile-card-president .quote {
       font-style: italic;
-      color: #009640;
+      color: var(--color-secondary);
       margin-top: 15px;
       line-height: 1.5em;
     }
@@ -18597,7 +18597,7 @@ footer.dark-optional .footer-bottom p {
             color: #3c2f2f;
         }
         .competence-leadership-card .subtitle {
-            color: #009640;
+            color: var(--color-secondary);
             font-size: 14px;
         }
 .lab-card {
@@ -18627,14 +18627,14 @@ footer.dark-optional .footer-bottom p {
       margin-bottom: 10px;
       padding-left: 20px;
       position: relative;
-      color: #009640;
+      color: var(--color-secondary);
     }
 
     .lab-card li::before {
       content: "✓";
       position: absolute;
       left: 0;
-      color: #009640;
+      color: var(--color-secondary);
       font-weight: bold;
     }
 
@@ -18656,7 +18656,7 @@ footer.dark-optional .footer-bottom p {
 
         .award-icon {
             font-size: 2em;
-            color: #009640;
+            color: var(--color-secondary);
             margin-bottom: 10px;
             text-align: center;
         }
@@ -18667,7 +18667,7 @@ footer.dark-optional .footer-bottom p {
         }
 
         .award-subtitle {
-            color: #009640;
+            color: var(--color-secondary);
             margin-top: 5px;
         }
 
@@ -18714,7 +18714,7 @@ footer.dark-optional .footer-bottom p {
 
     .description-actif, .description-engagement {
       font-size: 0.95em;
-      color: #009640;
+      color: var(--color-secondary);
     }
 
     /* Responsive */
@@ -18788,12 +18788,12 @@ footer.dark-optional .footer-bottom p {
         }
         .partner-text ul li::before {
             content: "✓ ";
-            color: #009640;
+            color: var(--color-secondary);
             font-weight: bold;
         }
         .partner-button {
             display: inline-block;
-            background-color: #009640;
+            background-color: var(--color-secondary);
             color: white;
             padding: 10px 20px;
             text-decoration: none;
