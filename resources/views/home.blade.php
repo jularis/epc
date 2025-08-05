@@ -13,7 +13,7 @@
     @foreach ($bannieres as $slide)
     <li>
       <img src="{{ asset('storage/app/public/'.$slide->image) }}" />
-      
+        @if($slide->titre)
         <div class="banner-style-seven-info" style="position: absolute !important;
     top: 300px;
     text-align: center;">
@@ -21,7 +21,7 @@
                                 <div class="col-lg-10">
                                     <div class="content right-info">
                                         <p style="color: #ffffff"> <?php echo $slide->getTranslatedAttribute('hautTitre', app()->getLocale()); ?></p>
-                                        <h2>{{$slide->titre}}</h2>
+                                        <h2><?php echo $slide->getTranslatedAttribute('titre', app()->getLocale()); ?></h2>
                                         <div class="info">
                                             <p>
                                                 <?php echo $slide->getTranslatedAttribute('description', app()->getLocale()); ?>
@@ -38,7 +38,7 @@
                                 </div>
                             </div>
                         </div>
-       
+       @endif
     </li>
     @endforeach
      
