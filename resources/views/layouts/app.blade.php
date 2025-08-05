@@ -24,9 +24,11 @@
     <link href="{{ asset('public/assets/css/helper.css') }}" rel="stylesheet">
     <link href="{{ asset('public/assets/css/unit-test.css') }}" rel="stylesheet">
     <link href="{{ asset('public/assets/css/style.css') }}" rel="stylesheet">
-    <link href="{{ asset('public/style.css') }}" rel="stylesheet">
+   
     <link rel="stylesheet" href="{{ asset('public/css/pli.css') }}">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.css" >
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flexslider/2.7.2/flexslider.min.css">
+ 
     <!-- ========== End Stylesheet ========== -->
 
 
@@ -76,6 +78,7 @@
           width: 100%;
           position: relative;
       }
+      
       </style>
          <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=<?php echo setting('site.google_analytics_tracking_id'); ?>"></script>
@@ -136,7 +139,8 @@
 
             <!-- jQuery Frameworks
     ============================================= -->
-    <script src="{{ asset('public/assets/js/jquery-3.7.1.min.js') }}"></script>
+    
+    <script src="{{ asset('public/assets/js/jquery-3.7.1.min.js') }}"></script>  
     <script src="{{ asset('public/assets/js/bootstrap.bundle.min.js') }}"></script>
     <script src="{{ asset('public/assets/js/jquery.appear.js') }}"></script>
     <script src="{{ asset('public/assets/js/jquery.easing.min.js') }}"></script>
@@ -156,7 +160,15 @@
     <script src="{{ asset('public/assets/js/SplitText.min.js') }}"></script>
     <script src="{{ asset('public/assets/js/main3.js') }}"></script>
  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/flexslider/2.7.2/jquery.flexslider-min.js"></script>
+<script>
+  $(window).on('load', function () {
+    $('.flexslider').flexslider({
+      animation: "slide",
+      directionNav : false
+    });
+  });
+</script>
 <script>
  @if(Session::has('message'))
  var type = "{{ Session::get('alert-type','info') }}"
@@ -227,27 +239,7 @@
                 document.currentScript.parentNode.insertBefore(script, document.currentScript)
             })();
 
-
-            const swiper = new Swiper('.banner-fade', {
-    loop: true,
-    effect: 'fade',
-    autoplay: {
-        delay: 5000,
-        disableOnInteraction: false,
-    },
-    navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-    },
-    fadeEffect: {
-        crossFade: true
-    }
-});
-
-// Arrêter autoplay après initialisation
-swiper.autoplay.stop();
-
-
+  
         </script>
 
 <?php

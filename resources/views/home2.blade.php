@@ -5,20 +5,23 @@
 
 @section('content')
 
-
      <!-- Start Banner Area
     ============================================= -->
-    <div class="flexslider text-light" style="margin: 0 0 50px;">
-  <ul class="slides banner-style-seven">
-    @foreach ($bannieres as $slide)
-    <li>
-      <img src="{{ asset('storage/app/public/'.$slide->image) }}" />
-      
-        <div class="banner-style-seven-info" style="position: absolute !important;
-    top: 300px;
-    text-align: center;">
+    <div class="banner-area banner-style-seven-area navigation-circle zoom-effect overflow-hidden text-light">
+
+        <!-- Slider main container -->
+        <div class="banner-fade">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                @foreach ($bannieres as $slide)
+ 
+                <!-- Single Item -->
+                <div class="swiper-slide banner-style-seven">
+                    <div class="banner-thumb bg-cover " style="background: url({{ asset('storage/app/public/'.str_replace('\\','/',$slide->image)) }});"></div>
+                    <div class="container">
+                        <div class="banner-style-seven-info">
                             <div class="row align-center">
-                                <div class="col-lg-10">
+                                <div class="col-lg-6">
                                     <div class="content right-info">
                                         <p style="color: hsl(43, 74%, 42%);"> <?php echo $slide->getTranslatedAttribute('hautTitre', app()->getLocale()); ?></p>
                                         <h2>{{$slide->titre}}</h2>
@@ -38,13 +41,22 @@
                                 </div>
                             </div>
                         </div>
-       
-    </li>
-    @endforeach
-     
-  </ul>
-</div>
-     
+                    </div>
+                </div>
+                <!-- End Single Item -->
+                @endforeach
+
+
+            </div>
+
+            <!-- Navigation -->
+            <div class="swiper-nav-left">
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+
+        </div>
+    </div>
     <!-- End Main -->
 
 
