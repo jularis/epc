@@ -49,6 +49,6 @@ Route::group([
 });
 
 
-Route::group(['prefix' => 'admin'], function () {
+Route::group(['prefix' => 'console-admin'], function () {
     Voyager::routes();
 });
