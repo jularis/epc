@@ -20,7 +20,7 @@
                             <div class="row align-center">
                                 <div class="col-lg-10">
                                     <div class="content right-info">
-                                        <p style="color: hsl(43, 74%, 42%);"> <?php echo $slide->getTranslatedAttribute('hautTitre', app()->getLocale()); ?></p>
+                                        <p style="color: #ffffff"> <?php echo $slide->getTranslatedAttribute('hautTitre', app()->getLocale()); ?></p>
                                         <h2>{{$slide->titre}}</h2>
                                         <div class="info">
                                             <p>
