@@ -1222,7 +1222,7 @@ nav.navbar.validnavs.navbar-fixed {
 
 nav.navbar.validnavs.navbar-fixed.no-background {
 	display: block;
-	position: absolute;
+	position: relative;
 	width: 100%;
 	z-index: 2;
 	box-shadow: 0 8px 25px 0 rgb(0 0 0 / 4%);
@@ -1315,7 +1315,7 @@ nav.navbar.validnavs.brand-center {
 	}
 
 	nav.navbar.validnavs.navbar-default.navbar-fixed.inc-topbar.no-background {
-		top: 50px;
+		/* top: 50px; */
         background: #ffffff;
     opacity: 1;
     filter: alpha(opacity = 97);
