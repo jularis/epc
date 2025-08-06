@@ -172,8 +172,7 @@
       animation: "fade",
       directionNav : true,
       controlNav : false,
-      slideshow : false,
-      smoothHeight: true,
+      slideshow : false, 
     });
   });
 </script>

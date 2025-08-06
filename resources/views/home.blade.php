@@ -8,7 +8,7 @@
 
      <!-- Start Banner Area
     ============================================= -->
-    <div class="flexslider text-light" style="margin: 0 0 50px;top: 80px;">
+    <div class="flexslider text-light" style="margin: 0px;z-index: 1;">
   <ul class="slides banner-style-seven">
     @foreach ($bannieres as $slide)
     <li>
