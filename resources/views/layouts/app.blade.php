@@ -78,6 +78,11 @@
           width: 100%;
           position: relative;
       }
+
+      .flex-direction-nav a {
+    width: 60px !important;
+    height: 60px !important;
+}
       
       </style>
          <!-- Google tag (gtag.js) -->
@@ -164,8 +169,11 @@
 <script>
   $(window).on('load', function () {
     $('.flexslider').flexslider({
-      animation: "slide",
-      directionNav : false
+      animation: "fade",
+      directionNav : true,
+      controlNav : false,
+      slideshow : false,
+      smoothHeight: true,
     });
   });
 </script>

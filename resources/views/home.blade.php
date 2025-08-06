@@ -8,14 +8,14 @@
 
      <!-- Start Banner Area
     ============================================= -->
-    <div class="flexslider text-light" style="margin: 0 0 50px;">
+    <div class="flexslider text-light" style="margin: 0 0 50px;top: 80px;">
   <ul class="slides banner-style-seven">
     @foreach ($bannieres as $slide)
     <li>
       <img src="{{ asset('storage/app/public/'.$slide->image) }}" />
         @if($slide->titre)
         <div class="banner-style-seven-info" style="position: absolute !important;
-    top: 300px;
+    top: 250px;
     text-align: center;">
                             <div class="row align-center">
                                 <div class="col-lg-10">
