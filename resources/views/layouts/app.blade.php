@@ -249,7 +249,11 @@
 
         </script>
 
-
+<?php
+use Illuminate\Support\Facades\Cookie;
+if(setting('site.showMsgHome')=='Non' && Cookie::get('msgHome') ==null)
+{
+?>
 <script type="text/javascript">
 // Initialisation de la temporisation
 temp = 0;
@@ -263,15 +267,44 @@ temp+=1000;
 });
 $(document).ready(function(){
 $('#subscribe-me').modal('show');
-setTimeout(function(){$('#subscribe-me').modal('hide')},30000);
+setTimeout(function(){$('#subscribe-me').modal('hide')},5000);
 //setTimeout("affichage();",temp - 1000);
      });
      $('#peel').on('click', function(){
     $('#subscribe-me').modal('hide');
 });
      </script>
+     <?php
+ }
+ ?>
 
-
+<?php
+if(setting('site.showMsgHome')=='Oui')
+{
+?>
+<script type="text/javascript">
+// Initialisation de la temporisation
+temp = 0;
+jQuery(function(){
+// Boucle de décrémentation
+// 10 représente le temps en secondes
+for (i=30 ;i > -1;i--){
+setTimeout("jQuery('#affichage').text('"+i+"');",temp);
+temp+=1000;
+}
+});
+$(document).ready(function(){
+$('#subscribe-me').modal('show');
+setTimeout(function(){$('#subscribe-me').modal('hide')},10000);
+//setTimeout("affichage();",temp - 1000);
+     });
+     $('#peel').on('click', function(){
+    $('#subscribe-me').modal('hide');
+});
+     </script>
+     <?php
+ }
+ ?>
     </body>
 
 </html>
