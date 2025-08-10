@@ -1,12 +1,7 @@
- 
-
- 
-
 #peel {
 
-	background: transparent url(../img/text.png) no-repeat scroll 100% 0;
 	position: fixed;
-right: 0px;
+    right: 0px;
 	text-decoration: none;
 	top: 0;
 	width: 190px;
@@ -20,7 +15,7 @@ right: 0px;
 	-webkit-transition: height 0.3s ease-out 0, width 0.3s ease-out 0;
 }
 
- 
+
 
 #peel:hover {
 
@@ -29,7 +24,7 @@ right: 0px;
 
 }
 
- 
+
 
 #peel img {
 
