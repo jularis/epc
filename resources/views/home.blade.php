@@ -569,7 +569,7 @@
 
 <div class="col-md-10 col-md-offset-1 text-center">
      <div class="img-height">
-     <img src="{{ asset('storage/app/public/'.setting('site.messageAccueil')) }}" alt="" style="width: 80%;">
+     <img src="{{ asset('storage/app/public/'.setting('site.messageAccueil')) }}" alt="" style="height: 50%;">
      </div>
 
  </div>
