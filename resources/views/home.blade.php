@@ -575,7 +575,7 @@
  </div>
 
  <div class="col-md-2">
-<a href="javascript:void();" class="close"  data-dismiss="modal" aria-hidden="true" id="peel" style="background: transparent url({{ asset('storage/app/public/'.setting('site.logo')) }}) no-repeat scroll 100% 0;">
+<a href="javascript:void();" class="close"  data-dismiss="modal" aria-hidden="true" id="peel" >
       <img src="<?php echo asset('public/img/corner.png'); ?>" />
     </a>
 </div>
