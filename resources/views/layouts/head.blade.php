@@ -129,7 +129,7 @@
                                     </a>
                                 </li>
                                 <li class="button">
-                                <a href="https://epc.elparadiscosmetic.net/catalogue2025/">Catalogue</a>
+                                <a href="https://epc.elparadiscosmetic.net/catalogue/">Catalogue</a>
                             </li>
                             </ul>
 
