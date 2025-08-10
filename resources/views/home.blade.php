@@ -41,10 +41,10 @@
        @endif
     </li>
     @endforeach
-     
+
   </ul>
 </div>
-     
+
     <!-- End Main -->
 
 
@@ -555,10 +555,44 @@
         </div>
     </div>
     <!-- End Newsletter -->
+    <?php
+        if(setting('site.showMsgHome')=='Oui')
+        {
+        ?>
+  <div id="subscribe-me" class="modal fade subscribe-me sb sb-animation-fade" style="display: block;overflow: hidden;padding: 0; width:102%;">
+<div class="modal-dialog" style="max-width: 100%;margin: 0;padding: 0;height: 100%;">
+<div class="modal-content" style="padding: 0;border-radius: 0;margin: 0;width: 100%;height: 100%;">
+
+<div class="modal-body" style="padding: 0;">
+     <div class="container-fluid">
+<div class="row">
+
+<div class="col-md-10 col-md-offset-1 text-center">
+     <div class="img-height">
+     <img src="{{ asset('storage/app/public/'.setting('site.messageAccueil')) }}" alt="" style="width: 80%;">
+     </div>
+
+ </div>
+
+ <div class="col-md-2">
+<a href="javascript:void();" class="close"  data-dismiss="modal" aria-hidden="true" id="peel">
+      <img src="<?php echo asset('public/img/corner.png'); ?>" />
+    </a>
+</div>
+
+ </div>
+ </div>
+    </div>
+    </div>
+    </div>
+  </div>
+ <?php
+      }
+      ?>
 <?php
 use Illuminate\Support\Facades\Cookie;
 // setting('site.showMsgHome')=='Oui' &&
-        if(setting('site.showMsgHome')=='Oui' && Cookie::get('msgHome') ==null)
+        if(setting('site.showMsgHome')=='Non' && Cookie::get('msgHome') ==null)
         {
         ?>
   <div id="subscribe-me" class="modal fade subscribe-me sb sb-animation-fade" style="display: block;overflow: hidden;padding: 0; width:102%;">

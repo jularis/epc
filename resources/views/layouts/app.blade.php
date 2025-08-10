@@ -24,11 +24,11 @@
     <link href="{{ asset('public/assets/css/helper.css') }}" rel="stylesheet">
     <link href="{{ asset('public/assets/css/unit-test.css') }}" rel="stylesheet">
     <link href="{{ asset('public/assets/css/style.css') }}" rel="stylesheet">
-   
+
     <link rel="stylesheet" href="{{ asset('public/css/pli.css') }}">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.css" >
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flexslider/2.7.2/flexslider.min.css">
- 
+
     <!-- ========== End Stylesheet ========== -->
 
 
@@ -83,7 +83,7 @@
     width: 60px !important;
     height: 60px !important;
 }
-      
+
       </style>
          <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=<?php echo setting('site.google_analytics_tracking_id'); ?>"></script>
@@ -144,8 +144,8 @@
 
             <!-- jQuery Frameworks
     ============================================= -->
-    
-    <script src="{{ asset('public/assets/js/jquery-3.7.1.min.js') }}"></script>  
+
+    <script src="{{ asset('public/assets/js/jquery-3.7.1.min.js') }}"></script>
     <script src="{{ asset('public/assets/js/bootstrap.bundle.min.js') }}"></script>
     <script src="{{ asset('public/assets/js/jquery.appear.js') }}"></script>
     <script src="{{ asset('public/assets/js/jquery.easing.min.js') }}"></script>
@@ -172,7 +172,7 @@
       animation: "fade",
       directionNav : true,
       controlNav : false,
-      slideshow : false, 
+      slideshow : false,
     });
   });
 </script>
@@ -246,14 +246,10 @@
                 document.currentScript.parentNode.insertBefore(script, document.currentScript)
             })();
 
-  
+
         </script>
 
-<?php
-use Illuminate\Support\Facades\Cookie;
-if(setting('site.showMsgHome')=='Oui' && Cookie::get('msgHome') ==null)
-{
-?>
+
 <script type="text/javascript">
 // Initialisation de la temporisation
 temp = 0;
@@ -274,9 +270,7 @@ setTimeout(function(){$('#subscribe-me').modal('hide')},5000);
     $('#subscribe-me').modal('hide');
 });
      </script>
-     <?php
- }
- ?>
+
 
     </body>
 
