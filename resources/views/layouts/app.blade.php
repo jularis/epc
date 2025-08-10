@@ -263,7 +263,7 @@ temp+=1000;
 });
 $(document).ready(function(){
 $('#subscribe-me').modal('show');
-setTimeout(function(){$('#subscribe-me').modal('hide')},5000);
+setTimeout(function(){$('#subscribe-me').modal('hide')},30000);
 //setTimeout("affichage();",temp - 1000);
      });
      $('#peel').on('click', function(){
