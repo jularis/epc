@@ -2444,9 +2444,9 @@ nav.navbar.validnavs.brand-center {
 }
 
 @media (max-width: 550px) {
-	.attr-right {
+	/* .attr-right {
 		display: none !important;
-	}
+	} */
 
 	.side {
 		width: 350px;
@@ -2472,9 +2472,9 @@ nav.navbar.validnavs.brand-center {
 		margin-right: -280px !important;
 	}
 
-	.navbar .attr-nav li.button {
+	/* .navbar .attr-nav li.button {
 		display: none;
-	}
+	} */
 }
 
 .navbar.validnavs.navbar-common .attr-right .attr-nav li .call i {
