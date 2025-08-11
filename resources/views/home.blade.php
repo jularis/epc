@@ -546,8 +546,14 @@
                         </ul>
                         <form action="{{url(app()->getLocale().'/contactez-nous')}}"  method="POST">
                             @csrf
-                            <input type="email" placeholder="@lang('common.email_text')" class="form-control" name="email" required>
-                            <button type="submit">@lang('common.subscribe')</button>
+                            <div class="row">
+                                <div class="col-xl-12">
+                                    <input type="email" placeholder="@lang('common.email_text')" class="form-control" name="email" required>
+                                    <button type="submit">@lang('common.subscribe')</button>
+                                </div>
+                            </div>
+
+
                         </form>
                     </div>
                 </div>
@@ -555,6 +561,106 @@
         </div>
     </div>
     <!-- End Newsletter -->
+
+    <!-- Start Testimonial Style Four
+    ============================================= -->
+    <div class="testimonial-style-four-area overflow-hidden default-padding text-light dark-optional">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5 thumb-style-five login-register-area register">
+                    <div class="login-register-items text-light">
+                            <h2>Avea-vous un témoignage?</h2>
+                            <p>
+                                N'hésitez pas à nous le faire savoir. <br>Renseignez ce formulaire  ci-dessous.
+                            </p>
+                            <form action="{{url(app()->getLocale().'/contactez-nous/temoignage')}}"  method="POST">
+                            @csrf
+                                <div class="row">
+                                    <div class="col-xl-12">
+                                        <div class="form-group">
+                                            <input id="name" name="nom" class="form-control" placeholder="Votre Nom*" type="text" required>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xl-12">
+                                        <div class="form-group">
+                                            <input id="poste" name="poste" class="form-control" placeholder="Votre fonction*" type="text" required>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xl-12">
+                                        <div class="form-group">
+                                            <textarea id="message" name="message" class="form-control" placeholder="Votre message...*" rows="5" cols="30" required></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="row">
+                                    <div class="col-xl-12">
+                                        <button class="btn btn-sm circle btn-theme animation" type="submit">Postez</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    <div class="thumb">
+                        <img src="<?php echo asset('public/assets/img/shape/57.png'); ?>" alt="Image Not Found">
+                    </div>
+                </div>
+                <div class="col-lg-6 offset-lg-1">
+                    <div class="mb-40">
+                        <h4 class="sub-title">@lang('common.temoignage')</h4>
+                        <h2 class="title">@lang('common.temoignage_texte')</h2>
+                    </div>
+                    <div class="testimonial-style-four-carousel swiper">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                            @foreach ($temoignages as $temoi)
+                            <!-- Single Item -->
+                            <div class="swiper-slide">
+                                <div class="testimonial-style-four-item">
+                                    <div class="top-info">
+                                        <h4></h4>
+                                        <div class="ratings">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                    </div>
+                                    <p>
+                                        {{$temoi->message}}
+                                    </p>
+                                    <div class="provider">
+                                        <div class="thumb">
+                                            <img src="<?php echo asset('public/img/user-286.png'); ?>" alt="Image Not Found">
+                                        </div>
+                                        <div class="info">
+                                            <h4>{{$temoi->nom}}</h4>
+                                            <span>{{$temoi->poste}}</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End Single Item -->
+                            @endforeach
+
+                        </div>
+                        <!-- Navigation -->
+                        <div class="testimonial-style-four-nav">
+                            <div class="testimonial-four-button-prev"></div>
+                            <div class="testimonial-four-button-next"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End  Testimonial Style Four  -->
+
     <?php
         if(setting('site.showMsgHome')=='Oui')
         {

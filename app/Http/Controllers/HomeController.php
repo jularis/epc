@@ -13,6 +13,7 @@ use App\Models\Partenaire;
 use Illuminate\Http\Request;
 use App\Models\CategoriesProduit;
 use App\Models\Slider;
+use App\Models\Temoignage;
 use Illuminate\Support\Facades\Cookie;
 use TCG\Voyager\Models\Page;
 use TCG\Voyager\Models\Post;
@@ -33,6 +34,8 @@ class HomeController extends Controller
          $data['produits'] = Produit::where('status','PUBLISHED')->inRandomOrder()->get();
 
         $data['partenaires'] = Partenaire::where('status','PUBLISHED')->orderby('id','desc')->get();
+
+        $data['temoignages'] = Temoignage::where('status','PUBLISHED')->orderby('id','desc')->get();
 
         if(Cookie::get('msgHome') ==null)
         {

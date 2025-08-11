@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Newsletter;
+use App\Models\Temoignage;
 use Illuminate\Http\Request;
 
 class ContactController extends Controller
@@ -67,7 +68,31 @@ class ContactController extends Controller
 
        return redirect()->back()->with($notification);
     }
+    public function storeTemoignage(Request $request)
+    {
 
+        $contact = new Temoignage();
+        $contact->nom = $request->nom;
+        $contact->poste = $request->poste;
+        $contact->message = $request->message;
+        $contact->status = "DRAFT";
+
+    $contact->save();
+        if($contact){
+            $notification = array(
+'message' =>"Votre témoignage a été bien enregistré.",
+'alert-type' => 'success'
+            );
+        }
+        else{
+            $notification = array(
+'message' =>"Une erreur s'est produite pendant votre témoignage. Veuillez réessayer plutard",
+'alert-type' => 'error'
+            );
+        }
+
+       return redirect()->back()->with($notification);
+    }
     /**
      * Display the specified resource.
      *

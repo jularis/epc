@@ -39,6 +39,7 @@ Route::group([
 
     Route::get('/contactez-nous', [ContactController::class, 'index']);
     Route::post('/contactez-nous', [ContactController::class, 'store']);
+    Route::post('/contactez-nous/temoignage', [ContactController::class, 'storeTemoignage']);
 
     Route::get('/ou-trouver-nos-produits', [PartenaireController::class, 'index']);
 
@@ -51,5 +52,5 @@ Route::group([
 
 Route::group(['prefix' => 'console-admin'], function () {
     Voyager::routes();
-    
+
 });

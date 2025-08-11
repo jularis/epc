@@ -92,5 +92,8 @@ return [
     'rapide'=>"Rápido",
     'subscribe'=>"Subscrever",
     'email_text'=>"O seu e-mail",
+    'nom_text' => "O seu nome",
+    'temoignage' => "Testemunhos",
+'temoignage_texte' => "O que dizem os nossos clientes?",
 
 ];

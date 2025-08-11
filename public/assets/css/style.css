@@ -666,8 +666,8 @@ p {
 }
 
 .default-padding {
-	padding-top: 120px;
-	padding-bottom: 120px;
+	padding-top: 40px;
+	padding-bottom: 40px;
 }
 
 @media only screen and (max-width: 767px) {
@@ -11441,7 +11441,7 @@ ul.event-location li a:hover {
 .testimonial-style-four-nav {
 	position: absolute;
 	right: 0;
-	bottom: 0;
+	bottom: 210px;
 	display: flex;
 	align-items: center;
 	z-index: 1;
@@ -13782,12 +13782,21 @@ a.btn-read-more:hover {
 	background: rgba(0, 0, 0, 0.2);
 	color: var(--white);
 }
-
+.login-register-area .form-group textarea {
+	border-radius: 10px;
+	padding: 0 26px;
+	min-height: 55px;
+	border: none;
+	background: rgba(0, 0, 0, 0.2);
+	color: var(--white);
+}
 .login-register-area.register .form-group input {
 	border-radius: 10px;
 }
-
-.login-register-area .form-group input::placeholder {
+.newsletter-style-one-items form input::placeholder{
+    color: var(--color-heading);
+}
+.login-register-area .form-group input::placeholder, .login-register-area .form-group textarea::placeholder{
  /* Chrome, Firefox, Opera, Safari 10.1+ */
 	color: var(--white);
 	opacity: 1;

@@ -92,4 +92,8 @@ return [
     'rapide'=>"Rapide",
     'subscribe'=>"S'abonner",
     'email_text'=>"Votre adresse e-mail",
+    'nom_text'=>"Votre Nom",
+    'temoignage' => "Témoignages",
+    'temoignage_texte' => "Ce que disent nos clients ?",
+
 ];

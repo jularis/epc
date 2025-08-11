@@ -91,4 +91,7 @@ return [
     'rapide'=>"Fast",
     'subscribe'=>"Subscribe",
     'email_text'=>"Your Email",
+    'nom_text'=>"Your Name",
+    'temoignage'=>"Testimonials",
+    'temoignage_texte'=>"What Our Clients Say?",
 ];
