@@ -673,14 +673,14 @@
      <div class="container-fluid">
 <div class="row">
 
-<div class="col-md-10 col-md-offset-1 text-center">
+<div class="col-md-11 col-ms-12 text-center">
      <div class="img-height">
      <img src="{{ asset('storage/app/public/'.setting('site.messageAccueil')) }}" alt="" style="width: 100%;">
      </div>
 
  </div>
 
- <div class="col-md-2">
+ <div class="col-md-1">
 <a href="javascript:void();" class="close"  data-dismiss="modal" aria-hidden="true" id="peel" >
       <img src="<?php echo asset('public/img/corner.png'); ?>" />
     </a>
