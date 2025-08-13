@@ -32,8 +32,8 @@
                 <!-- Single Item -->
                 <div class="col-xl-4 col-lg-6 col-md-6 mb-30">
                     <div class="course-style-one-item hover-less wow fadeInUp">
-                        <div class="thumb" style="max-height: 370px">
-                            <img src="{{ asset('storage/app/public/'.str_replace('\\','/',$prod->image)) }}" alt="Image Not Found">
+                        <div class="thumb" style="height: 370px">
+                            <img src="{{ asset('storage/app/public/'.str_replace('\\','/',$prod->image)) }}" alt="Image Not Found" style="height: 100%;">
                         </div>
                         <div class="top-meta">
 
