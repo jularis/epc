@@ -8244,7 +8244,7 @@ ul.curriculum-list li .right-content i {
     # About Style Three
 =================================================================== */
 .about-style-three-thumb {
-	height: 100%;
+	width: 100%;
 	position: relative;
 	z-index: 1;
 }
