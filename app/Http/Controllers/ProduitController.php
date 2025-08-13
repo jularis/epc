@@ -18,7 +18,7 @@ class ProduitController extends Controller
 
         $data['metaDescription']='';
 
-        $data['produits'] = Produit::orderby('id','desc')->paginate(10);
+        $data['produits'] = Produit::inRandomOrder()->orderby('id','desc')->paginate(10);
 
         return view('produits.index', $data);
     }
@@ -32,7 +32,7 @@ class ProduitController extends Controller
 
         $categ = CategoriesProduit::where('slug',$slug)->first();
 
-        $data['produits'] = Produit::where('categories_produit_id',$categ->id)->orderby('id','desc')->paginate(10);
+        $data['produits'] = Produit::inRandomOrder()->where('categories_produit_id',$categ->id)->orderby('id','desc')->paginate(10);
 
         return view('produits.index',$data);
     }
