@@ -31,7 +31,7 @@ class HomeController extends Controller
          $data['bannieres'] = Slider::where('status','PUBLISHED')->orderby('id','asc')->get();
 
          $data['categorieproduits'] = CategoriesProduit::get();
-         $data['produits'] = Produit::where('status','PUBLISHED')->inRandomOrder()->get();
+         $data['produits'] = Produit::inRandomOrder()->where('status','PUBLISHED')->get();
 
         $data['partenaires'] = Partenaire::where('status','PUBLISHED')->orderby('id','desc')->get();
 
