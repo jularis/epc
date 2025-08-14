@@ -30,7 +30,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flexslider/2.7.2/flexslider.min.css">
 
     <!-- ========== End Stylesheet ========== -->
-
+@livewireStyles
 
         <style type="text/css">
 
@@ -305,6 +305,7 @@ setTimeout(function(){$('#subscribe-me').modal('hide')},30000);
      <?php
  }
  ?>
+ @livewireScripts
     </body>
 
 </html>
