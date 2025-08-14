@@ -356,8 +356,8 @@
                             <!-- Single Item -->
                             <div class="swiper-slide">
                                 <div class="course-style-one-item">
-                                    <div class="thumb" style="max-height: 370px">
-                                        <img src="{{ asset('storage/app/public/'.str_replace('\\','/',$prod->image)) }}" alt="">
+                                    <div class="thumb" style="height: 370px">
+                                        <img src="{{ asset('storage/app/public/'.str_replace('\\','/',$prod->image)) }}" alt="" style="height: 100%;">
                                         <div class="top-meta">
 
                                         </div>
