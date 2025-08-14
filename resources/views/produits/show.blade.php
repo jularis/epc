@@ -50,12 +50,12 @@
                                     <!-- End Tab Single -->
 <div class="blog-comments">
                             <div class="comments-area">
-                                <livewire:comments :model="$detail"/>
+
 
                             </div>
                         </div>
 
-
+ <livewire:comments :model="$detail"/>
 
                                 </div>
 
