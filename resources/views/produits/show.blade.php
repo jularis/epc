@@ -49,10 +49,6 @@
                                     </div>
                                     <!-- End Tab Single -->
 <div class="blog-comments">
-                            <div class="comments-area">
-
-
-                            </div>
                         </div>
 
  <livewire:comments :model="$detail"/>
