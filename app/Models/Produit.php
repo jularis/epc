@@ -7,12 +7,13 @@ use TCG\Voyager\Traits\Translatable;
 use Illuminate\Database\Query\Builder;
 use Illuminate\Database\Eloquent\Model;
 use App\Models\CategoriesProduit;
-
+use Usamamuneerchaudhary\Commentify\Traits\Commentable;
 
 class Produit extends Model
 {
     use Translatable;
     use Resizable;
+    use Commentable;
 
     protected $translatable = ['title', 'body', 'slug'];
     public const PUBLISHED = 'PUBLISHED';
