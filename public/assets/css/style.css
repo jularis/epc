@@ -2548,9 +2548,9 @@ button {
 	border-radius: 7px;
 	border: none;
 	box-shadow: inherit;
-	font-size: 16px;
+	font-size: 14px;
 	letter-spacing: 0;
-	padding: 13px 30px;
+	padding: 5px 15px;
 	background: #E7EDF8;
 	position: relative;
 	z-index: 1;
