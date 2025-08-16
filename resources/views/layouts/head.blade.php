@@ -129,7 +129,7 @@
                                     </a>
                                 </li>
                                 <li class="button">
-                                <a href="https://epc.elparadiscosmetic.net/catalogue/">Catalogue</a>
+                                <a href="{{ url('catalogue/')}}">Catalogue</a>
                             </li>
                             </ul>
 
