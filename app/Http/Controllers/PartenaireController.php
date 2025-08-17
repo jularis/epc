@@ -17,7 +17,7 @@ class PartenaireController extends Controller
 
         $data['metaDescription']='';
 
-        $data['partenaires'] = Partenaire::where('status','PUBLISHED')->orderby('id','desc')->get();
+        $data['partenaires'] = Partenaire::where('status','PUBLISHED')->orderby('order','asc')->get();
 
         return view('partenaire',$data);
     }
