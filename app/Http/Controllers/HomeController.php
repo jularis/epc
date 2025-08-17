@@ -33,7 +33,7 @@ class HomeController extends Controller
          $data['categorieproduits'] = CategoriesProduit::get();
          $data['produits'] = Produit::inRandomOrder()->where('status','PUBLISHED')->get();
 
-        $data['partenaires'] = Partenaire::where('status','PUBLISHED')->orderby('id','desc')->get();
+        $data['partenaires'] = Partenaire::where('status','PUBLISHED')->orderby('order','asc')->get();
 
         $data['temoignages'] = Temoignage::where('status','PUBLISHED')->orderby('id','desc')->get();
 
