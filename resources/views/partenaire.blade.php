@@ -27,6 +27,35 @@
     ============================================= -->
     <div class="about-style-three-area overflow-hidden pt-20 pt-md-120 pt-xs-70">
         <div class="container">
+            <div class="course-listing-contentes style-two">
+
+                <div class="row item-flex center">
+
+                    <div class="col-lg-6">
+                        <div class="content">
+                            <!-- Tab Nav -->
+
+                            <!-- End Tab Nav -->
+                        </div>
+                    </div>
+                    <div class="col-lg-6 text-end">
+                        <div class="right">
+                            <form class="course-search-form" action="#">
+                                <div class="input-group">
+                                    <select name="pays" id="pays" class="form-control">
+                                        <option value="">Selectionnez un pays</option>
+                                @foreach($pays as $nom)
+                                    <option value="{{ $nom->iso3 }}" {{ request()->pays == $nom->iso3 ? 'selected' : '' }}>{{ $nom->nicename }}</option>
+                                @endforeach
+                            </select>
+                                    <button type="submit"><i class="fas fa-search"></i></button>
+                                </div>
+                            </form>
+                            <a href="#">Filter <i class="fas fa-filter"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         <div class="cards">
                     @foreach ($partenaires as $part)
 
@@ -43,3 +72,11 @@
 
 <br>
 @endsection
+
+@push('script')
+    <script>
+ $('form select').on('change', function() {
+            $(this).closest('form').submit();
+        });
+    </script>
+@endpush

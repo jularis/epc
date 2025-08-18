@@ -12,15 +12,36 @@ class PartenaireController extends Controller
     /**
      * Display a listing of the resource.
      */
-    public function index()
+    public function index(Request $request)
     {
-        $data['pageTitle']= __('common.trouver');
 
+        $partenaire= Partenaire::where('status','PUBLISHED')->get();
+        $dataProd = array();
+        foreach ($partenaire as $data)
+            {
+                $dataProd[] = $data->pays_id;
+            }
+        $uniqueProd = array_unique($dataProd);
+
+        $data['pays'] = Pays::whereIn('pays.id', $uniqueProd)->get();
+        $data['pageTitle']= __('common.trouver');
         $data['metaDescription']='';
 
-        $data['partenaires'] = Partenaire::where('status','PUBLISHED')->orderby('order','asc')->get();
+        $data['partenaires'] = Partenaire::where('status','PUBLISHED')
+                                            ->orderby('order','asc')
+                                            ->get();
+        if(request()->pays){
+            $parten = Pays::where('iso3', request()->pays)->first();
+            $data['partenaires'] = Partenaire::where('status','PUBLISHED')
+                                            ->when($parten->id, function ($query, $pays){
+                                                    $query->where('pays_id', $pays);
+                                                })
+                                            ->orderby('order','asc')
+                                            ->get();
+        }
 
-        return view('partenaire',$data);
+
+        return view('partenaire', $data);
     }
 
     /**
