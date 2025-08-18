@@ -33,7 +33,7 @@
                     <div class="col-lg-3 col-md-12 mt-30 card2">
                         <a href="{{ $part->siteweb }}" target="_blank"><img src="{{ asset('storage/app/public/'.str_replace('\\','/',$part->image)) }}" alt="{{$part->nom}}" style="height: 325px;"></a>
                         <div class="card-title"><a href="{{ $part->siteweb }}" target="_blank">{{$part->nom}}</a> </div>
-                        <div class="card-desc">{{$part->type_surface}}</div>
+                        <div class="card-desc">{{$part->pays->nicename}} | {{$part->type_surface}}</div>
                     </div>
                     @endforeach
                 </div>

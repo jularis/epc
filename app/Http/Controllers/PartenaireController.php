@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Partenaire;
+use App\Models\Pays;
 use Illuminate\Http\Request;
 use TCG\Voyager\Models\Page;
 
@@ -47,7 +48,7 @@ class PartenaireController extends Controller
 
         $data['metaDescription']='';
 
-        $data['partenaires'] = Partenaire::where([['status','PUBLISHED'],['pays',$id]])->orderby('order','asc')->get();
+        $data['partenaires'] = Partenaire::where([['status','PUBLISHED'],['pays_id',$id]])->orderby('order','asc')->get();
 
         return view('partenaire',$data);
     }
