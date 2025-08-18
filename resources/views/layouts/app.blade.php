@@ -9,7 +9,7 @@
         <title>EL PARADIS COSMETIC | @yield('title')</title>
 <meta name="Robots" CONTENT="All">
 <meta name="keywords" content="<?php echo setting('site.MetaKeywords') ?? ''; ?>" />
-<meta name="google-site-verification" content="<?php echo setting('site.google-site-verification')?? ''; ?>" />
+<meta name="google-site-verification" content="<?php echo setting('site.GoogleSiteVerification') ?? ''; ?>" />
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 	<link rel="shortcut icon" type="image/x-icon" href="{{ asset('storage/app/public/'.setting('admin.icon_image')) }}">
