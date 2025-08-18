@@ -64,31 +64,31 @@ $articles = Post::where('status','published')->orderby('id','desc')->get();
 
             $donnees .='
             <url>
-      <loc>' . url(app()->getLocale().'/actualites/'.$row->catexam.'/'.$row->slug) . '</loc>
+      <loc>' . url(app()->getLocale().'/actualites/'.$row->slug) . '</loc>
       <changefreq>daily</changefreq>
       <priority>0.1</priority>
             </url>';
             }
 
-$catego = Page::where([['status','published']])->orderby('id','desc')->get();
+$catego = Page::orderby('id','desc')->get();
 foreach ($catego as $row) {
 
     $donnees .='
     <url>
-<loc>' . url(app()->getLocale().'/formations/'.$row->catform).'</loc>
+<loc>' . url(app()->getLocale().'/qui-sommes-nous/'.$row->slug).'</loc>
 <changefreq>daily</changefreq>
 <priority>0.1</priority>
     </url>';
     }
 
 
-    $articles = Galerie::where('status','published')->orderby('id','desc')->get();
+    $articles = CategoriesProduit::orderby('id','desc')->get();
 
         foreach ($articles as $row) {
 
             $donnees .='
             <url>
-      <loc>' . url(app()->getLocale().'/galeries/'.$row->slug). '</loc>
+      <loc>' . url(app()->getLocale().'/nos-produits/'.$row->slug). '</loc>
       <changefreq>daily</changefreq>
       <priority>0.1</priority>
             </url>';
