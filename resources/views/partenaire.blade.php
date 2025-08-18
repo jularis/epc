@@ -31,11 +31,23 @@
 
                 <div class="row item-flex center">
 
+
                     <div class="col-lg-6">
                         <div class="content">
                             <!-- Tab Nav -->
+                            <nav>
+                                <div class="nav nav-tabs" id="nav-tab" role="tablist">
 
+
+                                    <button class="nav-link" id="list-tab-control" data-bs-toggle="tab" data-bs-target="#list-tab" type="button" role="tab" aria-controls="list-tab" aria-selected="false">
+                                        <i class="fas fa-list"></i> List
+                                    </button>
+                                </div>
+                            </nav>
                             <!-- End Tab Nav -->
+                            <p>
+                              <h1>{{ $paysName }}</h1>
+                            </p>
                         </div>
                     </div>
                     <div class="col-lg-6 text-end">

@@ -30,8 +30,10 @@ class PartenaireController extends Controller
         $data['partenaires'] = Partenaire::where('status','PUBLISHED')
                                             ->orderby('order','asc')
                                             ->get();
+        $data['paysName'] = "";
         if(request()->pays){
             $parten = Pays::where('iso3', request()->pays)->first();
+            $data['paysName'] = $parten->name;
             $data['partenaires'] = Partenaire::where('status','PUBLISHED')
                                             ->when($parten->id, function ($query, $pays){
                                                     $query->where('pays_id', $pays);
