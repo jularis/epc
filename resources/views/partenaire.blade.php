@@ -63,7 +63,7 @@
                                     <button type="submit"><i class="fas fa-search"></i></button>
                                 </div>
                             </form>
-                            <a href="#">Filter <i class="fas fa-filter"></i></a>
+                            <a href="#">Filtre <i class="fas fa-filter"></i></a>
                         </div>
                     </div>
                 </div>
