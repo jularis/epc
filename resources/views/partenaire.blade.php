@@ -40,7 +40,7 @@
                     </div>
                     <div class="col-lg-6 text-end">
                         <div class="right">
-                            <form class="course-search-form" action="#">
+                            <form class="course-search-form" action="" id="formPays">
                                 <div class="input-group">
                                     <select name="pays" id="pays" class="form-control">
                                         <option value="">Selectionnez un pays</option>
@@ -71,6 +71,11 @@
     <!-- End About -->
 
 <br>
+<script>
+document.getElementById('pays').addEventListener('change', function() {
+    document.getElementById('formPays').submit();
+});
+</script>
 @endsection
 
 @push('script')
