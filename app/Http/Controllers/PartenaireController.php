@@ -27,10 +27,10 @@ class PartenaireController extends Controller
         $data['pageTitle']= __('common.trouver');
         $data['metaDescription']='';
 
-        $data['partenaires'] = Partenaire::where('status','PUBLISHED')
+        $data['partenaires'] = Partenaire::where([['status','PUBLISHED'],['pays_id',53]])
                                             ->orderby('order','asc')
                                             ->get();
-        $data['paysName'] = "";
+        $data['paysName'] = "CÔTE D'IVOIRE";
         if(request()->pays){
             $parten = Pays::where('iso3', request()->pays)->first();
             $data['paysName'] = $parten->name;
