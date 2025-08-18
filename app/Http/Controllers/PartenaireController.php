@@ -43,7 +43,13 @@ class PartenaireController extends Controller
      */
     public function show(string $id)
     {
+    $data['pageTitle']= __('common.trouver');
 
+        $data['metaDescription']='';
+
+        $data['partenaires'] = Partenaire::where([['status','PUBLISHED'],['pays',$id]])->orderby('order','asc')->get();
+
+        return view('partenaire',$data);
     }
 
 

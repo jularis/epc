@@ -42,7 +42,7 @@ Route::group([
     Route::post('/contactez-nous', [ContactController::class, 'store']);
     Route::post('/contactez-nous/temoignage', [ContactController::class, 'storeTemoignage']);
 
-    Route::get('/ou-trouver-nos-produits', [PartenaireController::class, 'index']);
+    Route::resource('ou-trouver-nos-produits', PartenaireController::class);
 
     Route::resource('actualites', ActualiteController::class);
     Route::get('/nos-produits', [ProduitController::class,'index']);
