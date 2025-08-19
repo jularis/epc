@@ -42,7 +42,7 @@
                                 </ul>
                             </div>
                             <div class="info">
-                                <h3 class="blog-title">
+                                <h3 class="blog-title" style="height: 110px;overflow:hidden;">
                                     <a href="{{url(app()->getLocale().'/actualites/'.$actu->slug)}}">{{ $actu->getTranslatedAttribute('title', app()->getLocale())}}</a>
                                 </h3>
                                 <p>
