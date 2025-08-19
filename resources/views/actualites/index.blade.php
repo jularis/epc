@@ -45,9 +45,6 @@
                                 <h3 class="blog-title" style="height: 110px;overflow:hidden;">
                                     <a href="{{url(app()->getLocale().'/actualites/'.$actu->slug)}}">{{ $actu->getTranslatedAttribute('title', app()->getLocale())}}</a>
                                 </h3>
-                                <p>
-                                    <?php echo $actu->getTranslatedAttribute('excerpt', app()->getLocale()); ?>
-                                </p>
                                 <a href="{{url(app()->getLocale().'/actualites/'.$actu->slug)}}" class="btn-read-more">@lang('common.readmore') <i class="fas fa-long-arrow-right"></i></a>
                             </div>
                         </div>
