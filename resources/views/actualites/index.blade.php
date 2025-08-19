@@ -38,6 +38,7 @@
                                 <img src="{{ asset('storage/app/public/'.str_replace('\\','/',$actu->image)) }}" alt="Image not Found">
                                 <ul class="blog-meta">
                                     <li><i class="fas fa-calendar-alt"></i> {{ date('d-m-Y', strtotime($actu->created_at))}}</li>
+                                    <li><a href="#"><i class="fas fa-eye"></i> {{ $actu->visite }}</a></li>
                                 </ul>
                             </div>
                             <div class="info">
