@@ -45,7 +45,7 @@ class ActualiteController  extends Controller
 
         $data['pageTitle']= __('common.actualite');
         $data['metaDescription']='';
-
+        $affectedRow = Post::where('slug',$slug)->increment('visite');
         $data['detail'] = Post::where('slug',$slug)->first();
 
         return view('actualites.show',$data);

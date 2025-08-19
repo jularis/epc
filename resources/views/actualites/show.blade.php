@@ -45,6 +45,9 @@
                                             <li>
                                                 <a href="#"><i class="fas fa-calendar-alt"></i> {{ date('d-m-Y', strtotime($detail->created_at))}}</a>
                                             </li>
+                                            <li>
+                                                <a href="#"><i class="fas fa-eye"></i> {{ $detail->visite }}</a>
+                                            </li>
                                         </ul>
                                     </div>
                                     <p>
