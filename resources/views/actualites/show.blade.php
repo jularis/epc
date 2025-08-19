@@ -65,8 +65,8 @@
 
                 <!-- Single Item -->
                 <div class="col-lg-4 col-md-12 mt-30">
-                    <div class="gallery-style-one-item">
-                        <img src="{{asset('storage/app/public/'.$datas)}}" alt="Image Not Found">
+                    <div class="gallery-style-one-item" style="height: 240px; overflow: hidden;">
+                        <img src="{{asset('storage/app/public/'.$datas)}}" alt="Image Not Found" style="width:100%; ">
                         <a class="item popup-gallery" href="{{asset('storage/app/public/'.$datas)}}"><i class="fa fa-link"></i></a>
                     </div>
                 </div>
