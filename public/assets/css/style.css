@@ -12297,7 +12297,7 @@ button.mfp-arrow.mfp-prevent-close::after {
 	left: 50%;
 	top: 50%;
 	transform: translate(-50%, -50%);
-	background: var(--color-primary);
+	background: var(--color-primary) !important;
 	display: inline-block;
 	height: 50px;
 	width: 50px;
