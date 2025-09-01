@@ -34,7 +34,7 @@
 
                     <div class="col-lg-6">
                         <div class="content">
-                            <!-- Tab Nav -->
+                            <!-- Tab Nav
                             <nav>
                                 <div class="nav nav-tabs" id="nav-tab" role="tablist">
 
@@ -44,7 +44,7 @@
                                     </button>
                                 </div>
                             </nav>
-                            <!-- End Tab Nav -->
+                            End Tab Nav -->
                             <p>
                               <h1>{{ $paysName }}</h1>
                             </p>
